@@ -1,4 +1,3 @@
-import React from 'react';
 import { Clock, ArrowRight } from 'lucide-react';
 
 export default function TripCard({

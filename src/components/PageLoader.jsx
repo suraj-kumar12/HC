@@ -1,9 +1,7 @@
-import React from 'react';
-
 export default function PageLoader() {
   return (
     <div
-      className="min-h-[60vh] flex flex-col items-center justify-center bg-[#FFFCF6] text-[#303D32] px-4 animate-fade-in"
+      className="min-h-[60vh] flex flex-col items-center justify-center bg-[#FFFCF6] text-[#303D32] px-4 transition-opacity duration-300"
       role="status"
       aria-live="polite"
       aria-label="Loading page content"

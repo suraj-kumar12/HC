@@ -1,4 +1,3 @@
-import React from 'react';
 import { Sparkles, Heart, ShieldCheck, Sun, Leaf, ArrowRight, Quote, MessageCircle } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
 import Button from '../components/Button';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Sparkles, Maximize2, MessageCircle } from 'lucide-react';
 import GalleryLightbox from '../components/GalleryLightbox';
 import Button from '../components/Button';
