@@ -493,7 +493,7 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 mt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-3 mt-8">
             {TRIP_CONFIG.brochurePages.slice(0, 7).map((sheet) => (
               <Link
                 key={sheet.page}

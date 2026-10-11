@@ -9,7 +9,7 @@ export const TRIP_CONFIG = {
   location: "Shangarh, Sainj Valley, Kullu, Himachal Pradesh",
   altitude: "6,900 ft (2,100 m) above sea level",
   duration: "3 Days / 2 Nights (4D with Overnight Travel)",
-  groupSize: "10 – 20 Girls Only",
+  groupSize: "10 – 14 Girls Only",
   basePrice: 9499, // Official brochure price: INR 9,499 per person Double Sharing
   priceNote: "₹9,499 per person (Double Sharing • 50% Advance to Reserve)",
   gstNote: "5% GST applicable additionally",

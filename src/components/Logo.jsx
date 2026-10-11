@@ -7,7 +7,7 @@ import React from 'react';
 function Logo({ className = '' }) {
   return (
     <img
-      src="/images/hc.png"
+      src="/images/image.png" 
       alt="Healing Circle — Travel, Wellness, Sisterhood"
       className={`h-auto w-full object-contain ${className}`}
     />
