@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sparkles, MapPin, Compass } from 'lucide-react';
+import { Menu, X, Sparkles, MapPin } from 'lucide-react';
 import Button from './Button';
+import Logo from './Logo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,23 +45,14 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
+            
             {/* Brand Logo */}
             <Link
               to="/"
-              className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#1E3A2F] rounded-lg p-1"
+              className="flex items-center group focus:outline-none focus:ring-2 focus:ring-[#1E3A2F] rounded-lg p-1 transition-transform hover:scale-[1.02]"
               aria-label="Healing Circle Home"
             >
-              <div className="w-10 h-10 rounded-full bg-[#1E3A2F] text-[#FAF8F5] flex items-center justify-center shadow-md shadow-[#1E3A2F]/20 group-hover:scale-105 transition-transform duration-300 border border-[#D4AF37]/40">
-                <Compass className="w-5 h-5 text-[#E5C66C] animate-pulse" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#142820] leading-none group-hover:text-[#1E3A2F] transition-colors">
-                  Healing Circle
-                </span>
-                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#6B917E] font-medium mt-1">
-                  Shangarh Retreat
-                </span>
-              </div>
+              <Logo className="max-w-[150px] sm:max-w-[175px] md:max-w-[195px] max-h-12 sm:max-h-14" />
             </Link>
 
             {/* Desktop Navigation Links */}

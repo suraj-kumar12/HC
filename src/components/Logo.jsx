@@ -15,7 +15,7 @@ function Logo({
 }) {
   let src = '/images/healing-circle-logo.png';
   if (variant === 'cream') {
-    src = '/images/healing-circle-logo-cream.png';
+    src = '/images/healing-circle-logo-crop.png';
   } else if (variant === 'emblem') {
     src = '/images/healing-circle-emblem.png';
   }
