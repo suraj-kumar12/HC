@@ -20,6 +20,7 @@ import SectionHeading from '../components/SectionHeading';
 import TripCard from '../components/TripCard';
 import FAQAccordion from '../components/FAQAccordion';
 import Logo from '../components/Logo';
+import BrochureSlider from '../components/BrochureSlider';
 import { TRIP_CONFIG } from '../data/tripData';
 import { TESTIMONIALS_DATA } from '../data/testimonials';
 
@@ -493,26 +494,8 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-3 mt-8">
-            {TRIP_CONFIG.brochurePages.slice(0, 7).map((sheet) => (
-              <Link
-                key={sheet.page}
-                to="/gallery"
-                className="group relative rounded-xl overflow-hidden border border-[#E7E5DA] shadow-xs hover:shadow-md transition-all aspect-9/16 bg-[#F3F5EC]"
-              >
-                <img
-                  src={sheet.src}
-                  alt={sheet.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-[10px] text-white font-medium leading-tight line-clamp-2">
-                    {sheet.title}
-                  </span>
-                </div>
-              </Link>
-            ))}
+          <div className="mt-8">
+            <BrochureSlider pages={TRIP_CONFIG.brochurePages} />
           </div>
         </div>
       </section>
