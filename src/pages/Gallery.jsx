@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Sparkles, Maximize2 } from 'lucide-react';
 import GalleryLightbox from '../components/GalleryLightbox';
 import Button from '../components/Button';
+import Logo from '../components/Logo';
 import { GALLERY_DATA, GALLERY_CATEGORIES } from '../data/galleryData';
 
 export default function Gallery() {
@@ -156,6 +157,12 @@ export default function Gallery() {
       {/* 5. FOOTER INVITATION */}
       <section className="py-20 bg-[#1E3A2F] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="mb-4 flex justify-center">
+            <div className="bg-[#FAF8F5] p-2.5 px-5 rounded-2xl shadow-lg inline-flex">
+              <Logo className="max-w-[160px] max-h-12" />
+            </div>
+          </div>
+
           <h2 className="font-serif text-3xl sm:text-4xl font-medium mb-4">
             Experience These Views Firsthand
           </h2>

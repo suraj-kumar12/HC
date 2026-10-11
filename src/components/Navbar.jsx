@@ -126,14 +126,14 @@ export default function Navbar() {
           {/* Drawer content */}
           <div className="relative z-10 bg-[#FAF8F5] border-b border-[#E8E1D7] px-6 py-6 shadow-2xl flex flex-col animate-fade-in max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between pb-4 border-b border-[#E8E1D7]">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-full bg-[#1E3A2F] flex items-center justify-center text-[#E5C66C]">
-                  <Compass className="w-4 h-4" />
-                </div>
-                <span className="font-serif text-lg font-bold text-[#142820]">
-                  Healing Circle
-                </span>
-              </div>
+              <Link
+                to="/"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center"
+                aria-label="Healing Circle Home"
+              >
+                <Logo className="max-w-[150px] max-h-11" />
+              </Link>
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}

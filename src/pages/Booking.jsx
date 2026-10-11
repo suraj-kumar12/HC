@@ -7,6 +7,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import BookingForm from '../components/BookingForm';
+import Logo from '../components/Logo';
 import { TRIP_CONFIG } from '../data/tripData';
 
 export default function Booking() {
@@ -59,6 +60,7 @@ export default function Booking() {
             
             {/* Summary Card */}
             <div className="bg-white rounded-3xl border border-[#CFDDD3] p-6 sm:p-8 shadow-sm">
+              <Logo className="max-w-[160px] max-h-12 mb-4" />
               <span className="text-xs uppercase tracking-widest text-[#6B917E] font-semibold">
                 Trip Overview
               </span>

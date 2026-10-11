@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Compass, Heart, MapPin, Mail, Phone, Calendar, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { Heart, MapPin, Mail, Phone, Calendar, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import Logo from './Logo';
 import { TRIP_CONFIG } from '../data/tripData';
 
 const currentYear = 2026;
@@ -18,13 +19,12 @@ export default function Footer() {
           
           {/* Brand & Mission (Col 1-2) */}
           <div className="lg:col-span-2">
-            <Link to="/" className="inline-flex items-center gap-3 mb-4 group">
-              <div className="w-10 h-10 rounded-full bg-[#FAF8F5] text-[#142820] flex items-center justify-center font-bold shadow-md">
-                <Compass className="w-5 h-5 text-[#C99E32]" />
-              </div>
-              <span className="font-serif text-2xl font-bold tracking-tight text-white">
-                Healing Circle
-              </span>
+            <Link
+              to="/"
+              className="inline-flex items-center p-2 px-3.5 rounded-2xl bg-[#FAF8F5] mb-5 shadow-md shadow-black/20 hover:bg-white transition-all duration-300 group"
+              aria-label="Healing Circle Home"
+            >
+              <Logo className="max-w-[140px] sm:max-w-[155px] max-h-11" />
             </Link>
             
             <p className="text-sm text-[#CFDDD3] leading-relaxed max-w-sm mb-6">

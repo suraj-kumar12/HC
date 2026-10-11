@@ -18,6 +18,7 @@ import Button from '../components/Button';
 import SectionHeading from '../components/SectionHeading';
 import TripCard from '../components/TripCard';
 import FAQAccordion from '../components/FAQAccordion';
+import Logo from '../components/Logo';
 import { TRIP_CONFIG } from '../data/tripData';
 import { TESTIMONIALS_DATA } from '../data/testimonials';
 
@@ -42,8 +43,15 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white flex flex-col items-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center text-white flex flex-col items-center">
           
+          {/* Official Brand Logo */}
+          <div className="mb-5 animate-fade-in">
+            <div className="bg-[#FAF8F5]/95 backdrop-blur-md px-5 sm:px-7 py-2.5 sm:py-3 rounded-2xl sm:rounded-3xl shadow-2xl border border-white/40 inline-flex items-center justify-center">
+              <Logo className="max-w-[200px] sm:max-w-[240px] max-h-16 sm:max-h-20" />
+            </div>
+          </div>
+
           {/* Pill Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-xs uppercase tracking-widest text-[#E5C66C] mb-6 shadow-md animate-fade-in">
             <Sparkles className="w-3.5 h-3.5 text-[#E5C66C]" />

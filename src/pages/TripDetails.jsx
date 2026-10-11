@@ -16,6 +16,7 @@ import SectionHeading from '../components/SectionHeading';
 import Button from '../components/Button';
 import FAQAccordion from '../components/FAQAccordion';
 import GalleryLightbox from '../components/GalleryLightbox';
+import Logo from '../components/Logo';
 import { TRIP_CONFIG } from '../data/tripData';
 
 export default function TripDetails() {
@@ -463,6 +464,12 @@ export default function TripDetails() {
       {/* 4. BOTTOM BOOKING CTA */}
       <section className="py-20 bg-[#1E3A2F] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="mb-4 flex justify-center">
+            <div className="bg-[#FAF8F5] p-2.5 px-5 rounded-2xl shadow-lg inline-flex">
+              <Logo className="max-w-[160px] max-h-12" />
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs uppercase tracking-widest text-[#E5C66C] mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Join the Circle</span>

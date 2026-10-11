@@ -2,6 +2,7 @@ import React from 'react';
 import { Sparkles, Heart, ShieldCheck, Sun, Leaf, ArrowRight, Quote } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
 import Button from '../components/Button';
+import Logo from '../components/Logo';
 
 export default function About() {
   return (
@@ -19,6 +20,13 @@ export default function About() {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Logo Brand Card */}
+          <div className="mb-6 flex justify-center animate-fade-in">
+            <div className="bg-[#FAF8F5]/95 backdrop-blur-md px-5 sm:px-6 py-2.5 rounded-2xl shadow-xl inline-flex items-center justify-center">
+              <Logo className="max-w-[180px] sm:max-w-[210px] max-h-14" />
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs uppercase tracking-widest text-[#E5C66C] mb-6">
             <Sparkles className="w-3.5 h-3.5 text-[#E5C66C]" />
             <span>Our Origin & Purpose</span>

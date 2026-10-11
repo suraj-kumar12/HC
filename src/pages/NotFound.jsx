@@ -1,13 +1,14 @@
 import React from 'react';
-import { Compass, ArrowRight, Home } from 'lucide-react';
+import { ArrowRight, Home } from 'lucide-react';
 import Button from '../components/Button';
+import Logo from '../components/Logo';
 
 export default function NotFound() {
   return (
     <div className="min-h-[80vh] flex items-center justify-center bg-[#FAF8F5] px-4 py-20 text-center">
       <div className="max-w-md mx-auto space-y-6">
-        <div className="w-20 h-20 rounded-full bg-[#E7EEE9] text-[#1E3A2F] flex items-center justify-center mx-auto shadow-md">
-          <Compass className="w-10 h-10 text-[#C99E32] animate-spin" style={{ animationDuration: '10s' }} />
+        <div className="flex justify-center mb-2">
+          <Logo variant="emblem" className="w-20 h-20 shadow-md rounded-full p-2 bg-[#E7EEE9]" />
         </div>
 
         <span className="text-xs uppercase tracking-widest text-[#6B917E] font-semibold block">

@@ -8,6 +8,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
+import Logo from '../components/Logo';
 import { TRIP_CONFIG } from '../data/tripData';
 
 export default function Contact() {
@@ -58,6 +59,7 @@ export default function Contact() {
           {/* Contact Details & Info (Col 1-5) */}
           <div className="lg:col-span-5 space-y-8">
             <div>
+              <Logo className="max-w-[170px] max-h-12 mb-3" />
               <span className="text-xs uppercase tracking-widest text-[#6B917E] font-semibold">
                 Trip Concierge
               </span>
