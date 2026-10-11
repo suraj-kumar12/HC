@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 import Logo from '../components/Logo';
+import SEO from '../components/SEO';
 import { TRIP_CONFIG } from '../data/tripData';
 
 export default function Contact() {
@@ -19,6 +20,12 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
+      <SEO
+        title="Contact Trip Concierge | Healing Circle – Shangarh Retreat Inquiries"
+        description="Have questions about joining our women-only Shangarh retreat? Contact our female trip facilitators via phone, email, or direct WhatsApp support."
+        canonical="/contact"
+        image="/images/real-stay-flower-garden.jpg"
+      />
       
       {/* 1. HERO HEADER - BRIGHT LIGHT NATURE THEME */}
       <section className="relative py-24 sm:py-32 overflow-hidden text-center border-b border-[#E7E5DA]">
@@ -26,6 +33,8 @@ export default function Contact() {
           <img
             src="/images/real-stay-flower-garden.jpg"
             alt="Chamomile flower garden and wooden homestay in Shangarh"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#FFFCF6]/90 via-[#FFFCF6]/75 to-[#FFFCF6]" />

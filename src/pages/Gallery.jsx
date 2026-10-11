@@ -3,6 +3,7 @@ import { Sparkles, Maximize2, MessageCircle } from 'lucide-react';
 import GalleryLightbox from '../components/GalleryLightbox';
 import Button from '../components/Button';
 import Logo from '../components/Logo';
+import SEO from '../components/SEO';
 import { GALLERY_DATA, GALLERY_CATEGORIES } from '../data/galleryData';
 
 export default function Gallery() {
@@ -34,6 +35,12 @@ export default function Gallery() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
+      <SEO
+        title="Retreat Photo Gallery & Brochure | Healing Circle Shangarh"
+        description="Browse real photographs and the official 14-page brochure of our Shangarh girls retreat. Scenic alpine meadows, Kathkuni homestay, waterfalls, and sisterhood moments."
+        canonical="/gallery"
+        image="/images/real-group-mountain.jpg"
+      />
       
       {/* 1. HERO HEADER - BRIGHT LIGHT THEME */}
       <section className="relative py-24 sm:py-32 overflow-hidden text-center border-b border-[#E7E5DA]">
@@ -41,6 +48,8 @@ export default function Gallery() {
           <img
             src="/images/real-temple-meadow.jpg"
             alt="Pristine alpine meadows and temple of Shangarh"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#FFFCF6]/90 via-[#FFFCF6]/75 to-[#FFFCF6]" />

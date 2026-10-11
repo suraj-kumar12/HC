@@ -18,6 +18,7 @@ import Button from '../components/Button';
 import FAQAccordion from '../components/FAQAccordion';
 import GalleryLightbox from '../components/GalleryLightbox';
 import Logo from '../components/Logo';
+import SEO from '../components/SEO';
 import { TRIP_CONFIG } from '../data/tripData';
 
 export default function TripDetails() {
@@ -36,6 +37,12 @@ export default function TripDetails() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
+      <SEO
+        title="Shangarh Girls Trip Itinerary & Package | Healing Circle Retreats"
+        description="Explore the complete 3D/2N Shangarh girls trip itinerary, traditional wooden homestay stay, inclusions, waterfall hikes, yoga sessions, and brochure dossier."
+        canonical="/trip-details"
+        image="/images/real-waterfall-traveler.jpg"
+      />
       
       {/* 1. HERO HEADER - BRIGHT LIGHT THEME */}
       <section className="relative py-24 sm:py-32 overflow-hidden text-center border-b border-[#E7E5DA]">
@@ -43,6 +50,8 @@ export default function TripDetails() {
           <img
             src="/images/real-waterfall-traveler.jpg"
             alt="Barshangarh waterfall hike"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#FFFCF6]/90 via-[#FFFCF6]/75 to-[#FFFCF6]" />
@@ -140,6 +149,8 @@ export default function TripDetails() {
                     <img
                       src={day.image}
                       alt={day.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute top-4 left-4 bg-[#42634B] text-white px-3.5 py-1 rounded-full text-xs font-semibold shadow-xs">

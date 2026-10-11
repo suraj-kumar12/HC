@@ -2,10 +2,16 @@ import React from 'react';
 import { ArrowRight, Home } from 'lucide-react';
 import Button from '../components/Button';
 import Logo from '../components/Logo';
+import SEO from '../components/SEO';
 
 export default function NotFound() {
   return (
     <div className="min-h-[80vh] flex items-center justify-center bg-[#FFFCF6] px-4 py-20 text-center text-[#303D32]">
+      <SEO
+        title="Page Not Found | Healing Circle"
+        description="The page you are looking for has taken a quiet detour into the deodar woods. Return to Healing Circle."
+        noindex={true}
+      />
       <div className="max-w-md mx-auto space-y-6">
         <div className="flex justify-center mb-4">
           <div className="bg-white p-3 px-6 rounded-2xl shadow-sm border border-[#E7E5DA] inline-flex items-center justify-center">

@@ -21,6 +21,7 @@ import TripCard from '../components/TripCard';
 import FAQAccordion from '../components/FAQAccordion';
 import Logo from '../components/Logo';
 import BrochureSlider from '../components/BrochureSlider';
+import SEO from '../components/SEO';
 import { TRIP_CONFIG } from '../data/tripData';
 import { TESTIMONIALS_DATA } from '../data/testimonials';
 
@@ -37,6 +38,12 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
+      <SEO
+        title="Healing Circle – Shangarh Girls Trip | Mindful Himalayan Retreat"
+        description="An intimate, transformative girls-only travel & wellness retreat to Shangarh, Sainj Valley, Himachal Pradesh. Alpine meadows, sunrise yoga, waterfall treks, and deep sisterhood."
+        canonical="/"
+        image="/images/real-temple-meadow.jpg"
+      />
       
       {/* 1. HERO SECTION - BRIGHT & AIRY LIGHT NATURE THEME */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b border-[#E7E5DA]">
@@ -45,6 +52,8 @@ export default function Home() {
           <img
             src="/images/real-temple-meadow.jpg"
             alt="Sacred Shangchul Mahadev Temple in the lush Shangarh Meadow"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover object-center scale-102 transition-transform duration-1000 ease-out"
           />
           {/* Luminous, daylight-enhancing gradient overlays */}
@@ -188,6 +197,8 @@ export default function Home() {
                 <img
                   src="/images/real-group-mountain.jpg"
                   alt="Real photo of 10 girls smiling together on the Shangarh mountain ridge"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -197,6 +208,8 @@ export default function Home() {
                 <img
                   src="/images/real-group-bridge.jpg"
                   alt="Girls cheering on the stone bridge over mountain stream"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -769,6 +782,8 @@ export default function Home() {
           <img
             src="/images/real-bonfire-gathering.jpg"
             alt="Real evening campfire gathering in Shangarh"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>

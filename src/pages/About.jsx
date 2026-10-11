@@ -3,6 +3,7 @@ import { Sparkles, Heart, ShieldCheck, Sun, Leaf, ArrowRight, Quote, MessageCirc
 import SectionHeading from '../components/SectionHeading';
 import Button from '../components/Button';
 import Logo from '../components/Logo';
+import SEO from '../components/SEO';
 
 export default function About() {
   const whatsappUrl = `https://wa.me/918586020962?text=${encodeURIComponent(
@@ -11,6 +12,12 @@ export default function About() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
+      <SEO
+        title="Our Story & Philosophy | Healing Circle – Women-Only Himalayan Travel"
+        description="Learn why Healing Circle was founded. Discover our 4 pillars of mindful women-only travel, slow mountain living, and restorative retreats in Himachal Pradesh."
+        canonical="/about"
+        image="/images/real-forest-trek.jpg"
+      />
       
       {/* 1. HERO HEADER - BRIGHT, SUNLIT DAYLIGHT THEME */}
       <section className="relative py-24 sm:py-32 overflow-hidden text-center border-b border-[#E7E5DA]">
@@ -18,6 +25,8 @@ export default function About() {
           <img
             src="/images/real-forest-trek.jpg"
             alt="Pine forest trail in Sainj Valley"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#FFFCF6]/90 via-[#FFFCF6]/75 to-[#FFFCF6]" />
@@ -85,6 +94,8 @@ export default function About() {
                 <img
                   src="/images/real-painting-girl-1.jpg"
                   alt="Girl traveler holding her handcrafted wood painting"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -93,6 +104,8 @@ export default function About() {
                   <img
                     src="/images/real-group-mountain.jpg"
                     alt="Real group of 10 girls smiling together on the mountain ridge"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -100,6 +113,8 @@ export default function About() {
                   <img
                     src="/images/real-stay-flower-garden.jpg"
                     alt="Chamomile flower garden outside the wooden cottage"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -186,6 +201,8 @@ export default function About() {
                   <img
                     src="/images/real-waterfall-traveler.jpg"
                     alt="Retreat Guide by the Barshangarh Waterfall"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>

@@ -1,0 +1,6 @@
+# robots.txt for https://healingcircle.travel
+User-agent: *
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://healingcircle.travel/sitemap.xml

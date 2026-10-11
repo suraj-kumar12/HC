@@ -8,11 +8,18 @@ import {
 } from 'lucide-react';
 import BookingForm from '../components/BookingForm';
 import Logo from '../components/Logo';
+import SEO from '../components/SEO';
 import { TRIP_CONFIG } from '../data/tripData';
 
 export default function Booking() {
   return (
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
+      <SEO
+        title="Reserve Your Spot | Shangarh Girls Trip Retreat – Healing Circle"
+        description="Book your spot for the upcoming Healing Circle Shangarh Girls Trip. Transparent ₹9,499 double-sharing package, live cost calculator, and verified reservation."
+        canonical="/book"
+        image="/images/real-bonfire-gathering.jpg"
+      />
       
       {/* 1. HERO HEADER - BRIGHT LIGHT NATURE THEME */}
       <section className="relative py-20 sm:py-28 overflow-hidden text-center border-b border-[#E7E5DA]">
@@ -20,6 +27,8 @@ export default function Booking() {
           <img
             src="/images/real-bonfire-gathering.jpg"
             alt="Real evening campfire gathering in Shangarh"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#FFFCF6]/90 via-[#FFFCF6]/75 to-[#FFFCF6]" />
