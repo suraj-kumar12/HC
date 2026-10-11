@@ -5,21 +5,23 @@ import Logo from '../components/Logo';
 
 export default function NotFound() {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center bg-[#FAF8F5] px-4 py-20 text-center">
+    <div className="min-h-[80vh] flex items-center justify-center bg-[#FFFCF6] px-4 py-20 text-center text-[#303D32]">
       <div className="max-w-md mx-auto space-y-6">
-        <div className="flex justify-center mb-2">
-          <Logo variant="emblem" className="w-20 h-20 shadow-md rounded-full p-2 bg-[#E7EEE9]" />
+        <div className="flex justify-center mb-4">
+          <div className="bg-white p-3 px-6 rounded-2xl shadow-sm border border-[#E7E5DA] inline-flex items-center justify-center">
+            <Logo className="max-w-[200px] max-h-16" />
+          </div>
         </div>
 
-        <span className="text-xs uppercase tracking-widest text-[#6B917E] font-semibold block">
+        <span className="text-xs uppercase tracking-widest text-[#42634B] font-semibold block">
           404 — Path Not Found
         </span>
 
-        <h1 className="font-serif text-3xl sm:text-4xl font-medium text-[#142820]">
+        <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-[#303D32]">
           You've Wandered Off the Meadow Trail
         </h1>
 
-        <p className="text-sm text-[#4A5D53] leading-relaxed">
+        <p className="text-sm text-[#73796F] leading-relaxed">
           The page you are looking for has taken a quiet detour into the deodar woods. Let's guide you back to the sanctuary.
         </p>
 

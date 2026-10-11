@@ -18,12 +18,13 @@ export default function Button({
   const baseStyles = 'inline-flex items-center justify-center font-medium rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer';
 
   const variants = {
-    primary: 'bg-[#1E3A2F] text-[#FAF8F5] hover:bg-[#152A22] hover:shadow-lg hover:shadow-[#1E3A2F]/20 focus:ring-[#1E3A2F]',
-    secondary: 'bg-[#D9E5DE] text-[#1E3A2F] hover:bg-[#C8D9D0] focus:ring-[#7D9B8B]',
-    gold: 'bg-[#C99E32] text-white hover:bg-[#B38822] hover:shadow-md hover:shadow-[#C99E32]/30 focus:ring-[#C99E32]',
-    outline: 'border border-[#1E3A2F] text-[#1E3A2F] hover:bg-[#1E3A2F] hover:text-[#FAF8F5] focus:ring-[#1E3A2F]',
-    outlineLight: 'border border-white/60 text-white hover:bg-white hover:text-[#1E3A2F] focus:ring-white',
-    ghost: 'text-[#1E3A2F] hover:text-[#6B917E] hover:bg-[#EFE9DF]/50 px-3 py-1.5 focus:ring-[#1E3A2F]'
+    primary: 'bg-[#42634B] text-white hover:bg-[#344F3C] hover:shadow-md hover:shadow-[#42634B]/20 focus:ring-[#42634B]',
+    secondary: 'bg-[#F3F5EC] text-[#42634B] hover:bg-[#E5E9DB] border border-[#E7E5DA] focus:ring-[#8FA58A]',
+    gold: 'bg-[#C59A56] text-white hover:bg-[#B38743] hover:shadow-md hover:shadow-[#C59A56]/20 focus:ring-[#C59A56]',
+    outline: 'border border-[#42634B] text-[#42634B] bg-transparent hover:bg-[#42634B] hover:text-white focus:ring-[#42634B]',
+    outlineLight: 'border border-[#E7E5DA] bg-white/95 text-[#303D32] hover:bg-[#F3F5EC] hover:text-[#42634B] shadow-xs focus:ring-[#42634B]',
+    ghost: 'text-[#42634B] hover:text-[#303D32] hover:bg-[#F3F5EC] px-3 py-1.5 focus:ring-[#42634B]',
+    whatsapp: 'bg-[#25D366] text-white hover:bg-[#20BA5C] hover:shadow-md hover:shadow-[#25D366]/30 focus:ring-[#25D366]'
   };
 
   const sizes = {

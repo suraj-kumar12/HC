@@ -4,31 +4,44 @@
   --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 
-  --color-forest-950: #0C1913;
-  --color-forest-900: #142820;
-  --color-forest-800: #1E3A2F;
-  --color-forest-700: #294D3F;
-  --color-forest-600: #386453;
-  --color-forest-500: #4B7C69;
+  /* New Nature Palette Tokens */
+  --color-canvas: #FFFCF6;
+  --color-canvas-alt: #F3F5EC;
+  --color-brand-primary: #42634B;
+  --color-brand-sage: #8FA58A;
+  --color-brand-gold: #C59A56;
+  --color-text-main: #303D32;
+  --color-text-muted: #73796F;
+  --color-card-white: #FFFFFF;
+  --color-border-subtle: #E7E5DA;
 
-  --color-sage-50: #F5F8F6;
-  --color-sage-100: #E7EEE9;
-  --color-sage-200: #D0DFD4;
-  --color-sage-300: #B2C9B9;
-  --color-sage-400: #8FAFA8;
-  --color-sage-500: #6B917E;
-  --color-sage-600: #547363;
+  /* Forest green scale */
+  --color-forest-950: #1B2920;
+  --color-forest-900: #25392B;
+  --color-forest-800: #334E3B;
+  --color-forest-700: #42634B;
+  --color-forest-600: #51775B;
+  --color-forest-500: #628C6E;
 
-  --color-cream-50: #FDFCF9;
-  --color-cream-100: #FAF8F5;
-  --color-cream-200: #F4EFE6;
-  --color-cream-300: #ECE3D4;
-  --color-cream-400: #DFD2BC;
+  /* Sage scale */
+  --color-sage-50: #FAFBF7;
+  --color-sage-100: #F3F5EC;
+  --color-sage-200: #E4E8DC;
+  --color-sage-300: #CCD4C3;
+  --color-sage-400: #8FA58A;
+  --color-sage-500: #789073;
 
-  --color-gold-300: #F5E2A8;
-  --color-gold-400: #E5C66C;
-  --color-gold-500: #C99E32;
-  --color-gold-600: #AC8220;
+  /* Warm cream scale */
+  --color-cream-50: #FFFCF6;
+  --color-cream-100: #FAF6ED;
+  --color-cream-200: #F4EFE3;
+  --color-cream-300: #EAE1D2;
+
+  /* Gold scale */
+  --color-gold-300: #E8D3A8;
+  --color-gold-400: #D8B574;
+  --color-gold-500: #C59A56;
+  --color-gold-600: #AC823E;
 }
 
 /* Base resets & typography */
@@ -38,8 +51,8 @@ html {
 }
 
 body {
-  background-color: #FAF8F5;
-  color: #26332C;
+  background-color: #FFFCF6;
+  color: #303D32;
   overflow-x: hidden;
 }
 
@@ -52,33 +65,18 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Glassmorphism */
+/* Glassmorphism for Light Theme */
 .glass-header {
-  background: rgba(253, 251, 248, 0.85);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(230, 222, 210, 0.7);
-}
-
-.glass-dark {
-  background: rgba(20, 40, 32, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-/* Subtle texture & leaf motifs */
-.subtle-pattern {
-  background-image: radial-gradient(#1E3A2F 0.5px, transparent 0.5px), radial-gradient(#1E3A2F 0.5px, #FAF8F5 0.5px);
-  background-size: 24px 24px;
-  background-position: 0 0, 12px 12px;
-  opacity: 0.96;
+  border: 1px solid rgba(231, 229, 218, 0.85);
 }
 
 /* Custom scrollbar */
@@ -86,22 +84,32 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #FAF8F5;
+  background: #FFFCF6;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C4D3C9;
+  background: #CCD4C3;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8FAFA8;
+  background: #8FA58A;
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in {
   animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Subtle gentle floating animation for badge/elements */
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
 }

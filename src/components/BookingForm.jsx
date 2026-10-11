@@ -55,7 +55,6 @@ export default function BookingForm({ defaultBatch = null }) {
       ...prev,
       [name]: value
     }));
-    // Clear error on change
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: '' }));
     }
@@ -102,57 +101,57 @@ export default function BookingForm({ defaultBatch = null }) {
 
   if (submitted && confirmationData) {
     return (
-      <div className="bg-white rounded-3xl border border-[#CFDDD3] p-6 sm:p-10 shadow-xl shadow-[#1E3A2F]/5 animate-fade-in text-left">
-        <div className="w-16 h-16 rounded-full bg-[#E7EEE9] text-[#1E3A2F] flex items-center justify-center mb-6 mx-auto sm:mx-0">
-          <CheckCircle2 className="w-9 h-9 text-[#6B917E]" />
+      <div className="bg-white rounded-3xl border border-[#E7E5DA] p-6 sm:p-10 shadow-lg animate-fade-in text-left">
+        <div className="w-16 h-16 rounded-full bg-[#F3F5EC] text-[#42634B] flex items-center justify-center mb-6 mx-auto sm:mx-0">
+          <CheckCircle2 className="w-9 h-9 text-[#42634B]" />
         </div>
 
-        <div className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#F5E2A8]/40 text-[#967117] border border-[#E5C66C]/40 mb-3">
+        <div className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#F3F5EC] text-[#42634B] border border-[#E7E5DA] mb-3">
           Simulated Demonstration Confirmation
         </div>
 
-        <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#142820] mb-2">
+        <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#303D32] mb-2">
           Enquiry Request Simulated!
         </h3>
-        <p className="text-[#4A5D53] text-sm sm:text-base leading-relaxed mb-6">
-          Thank you, <strong className="text-[#142820]">{confirmationData.fullName}</strong>. Your interest in joining our Shangarh Girls Circle has been registered in the frontend demo state.
+        <p className="text-[#73796F] text-sm sm:text-base leading-relaxed mb-6">
+          Thank you, <strong className="text-[#303D32]">{confirmationData.fullName}</strong>. Your interest in joining our Shangarh Girls Circle has been registered in the frontend demo state.
         </p>
 
         {/* Summary Card */}
-        <div className="bg-[#FAF8F5] rounded-2xl border border-[#E8E1D7] p-5 sm:p-6 mb-6 space-y-3.5 text-sm">
-          <div className="flex items-center justify-between pb-3 border-b border-[#E8E1D7]">
-            <span className="text-[#6B917E] font-medium">Demo Reference ID</span>
-            <span className="font-mono font-semibold text-[#142820]">{confirmationData.refId}</span>
+        <div className="bg-[#FFFCF6] rounded-2xl border border-[#E7E5DA] p-5 sm:p-6 mb-6 space-y-3.5 text-sm">
+          <div className="flex items-center justify-between pb-3 border-b border-[#E7E5DA]">
+            <span className="text-[#73796F] font-medium">Demo Reference ID</span>
+            <span className="font-mono font-semibold text-[#303D32]">{confirmationData.refId}</span>
           </div>
 
           <div className="flex items-center justify-between">
-            <span className="text-[#6B917E] font-medium">Selected Batch</span>
-            <span className="font-semibold text-[#142820]">{confirmationData.batchDates}</span>
+            <span className="text-[#73796F] font-medium">Selected Batch</span>
+            <span className="font-semibold text-[#303D32]">{confirmationData.batchDates}</span>
           </div>
 
           <div className="flex items-center justify-between">
-            <span className="text-[#6B917E] font-medium">Number of Travelers</span>
-            <span className="font-semibold text-[#142820]">{confirmationData.travelers} {confirmationData.travelers === 1 ? 'Girl' : 'Girls'}</span>
+            <span className="text-[#73796F] font-medium">Number of Travelers</span>
+            <span className="font-semibold text-[#303D32]">{confirmationData.travelers} {confirmationData.travelers === 1 ? 'Girl' : 'Girls'}</span>
           </div>
 
           <div className="flex items-center justify-between">
-            <span className="text-[#6B917E] font-medium">Base Price (Placeholder)</span>
-            <span className="text-[#142820]">₹{pricePerPerson.toLocaleString()} per person</span>
+            <span className="text-[#73796F] font-medium">Base Price (Placeholder)</span>
+            <span className="text-[#303D32]">₹{pricePerPerson.toLocaleString()} per person</span>
           </div>
 
-          <div className="flex items-center justify-between pt-3 border-t border-[#E8E1D7] text-base">
-            <span className="font-serif font-bold text-[#142820]">Estimated Demo Total</span>
-            <span className="font-serif font-bold text-xl text-[#1E3A2F]">
+          <div className="flex items-center justify-between pt-3 border-t border-[#E7E5DA] text-base">
+            <span className="font-serif font-bold text-[#303D32]">Estimated Demo Total</span>
+            <span className="font-serif font-bold text-xl text-[#42634B]">
               ₹{confirmationData.totalEstimate.toLocaleString()}*
             </span>
           </div>
         </div>
 
         {/* Demo Disclaimer Box */}
-        <div className="bg-[#F4EFE6] border border-[#DFD2BC] rounded-xl p-4 text-xs text-[#5C4D38] leading-relaxed mb-6 flex items-start gap-3">
-          <AlertCircle className="w-5 h-5 text-[#C99E32] shrink-0 mt-0.5" />
+        <div className="bg-[#F3F5EC] border border-[#E7E5DA] rounded-xl p-4 text-xs text-[#73796F] leading-relaxed mb-6 flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 text-[#C59A56] shrink-0 mt-0.5" />
           <div>
-            <strong>Notice:</strong> This is a client-side frontend demo. No real monetary transactions have occurred, and no booking has been finalized on a server.
+            <strong className="text-[#303D32]">Notice:</strong> This is a client-side frontend demo. No real monetary transactions have occurred, and no booking has been finalized on a server.
           </div>
         </div>
 
@@ -183,20 +182,20 @@ export default function BookingForm({ defaultBatch = null }) {
   }
 
   return (
-    <div className="bg-white rounded-3xl border border-[#CFDDD3] p-6 sm:p-8 md:p-10 shadow-xl shadow-[#1E3A2F]/5 text-left">
-      <div className="flex items-center justify-between pb-6 mb-6 border-b border-[#E8E1D7]">
+    <div className="bg-white rounded-3xl border border-[#E7E5DA] p-6 sm:p-8 md:p-10 shadow-sm text-left">
+      <div className="flex items-center justify-between pb-6 mb-6 border-b border-[#E7E5DA]">
         <div>
-          <span className="text-xs uppercase tracking-widest text-[#6B917E] font-semibold">
+          <span className="text-xs uppercase tracking-widest text-[#8FA58A] font-semibold">
             Reserve Your Place
           </span>
-          <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#142820] mt-1">
+          <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#303D32] mt-1">
             Trip Enquiry & Fare Calculator
           </h3>
         </div>
         <div className="text-right hidden sm:block">
-          <span className="text-xs text-[#6B917E] block">Placeholder Rate</span>
-          <span className="font-serif text-2xl font-bold text-[#1E3A2F]">₹{pricePerPerson.toLocaleString()}*</span>
-          <span className="text-[10px] text-[#A8C2B6] block">/ traveler</span>
+          <span className="text-xs text-[#73796F] block">Placeholder Rate</span>
+          <span className="font-serif text-2xl font-bold text-[#42634B]">₹{pricePerPerson.toLocaleString()}*</span>
+          <span className="text-[10px] text-[#8FA58A] block">/ traveler</span>
         </div>
       </div>
 
@@ -204,20 +203,20 @@ export default function BookingForm({ defaultBatch = null }) {
         
         {/* Batch Selection */}
         <div>
-          <label htmlFor="batchId" className="block text-xs font-semibold uppercase tracking-wider text-[#142820] mb-2 flex items-center justify-between">
+          <label htmlFor="batchId" className="block text-xs font-semibold uppercase tracking-wider text-[#303D32] mb-2 flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <Calendar className="w-3.5 h-3.5 text-[#C99E32]" />
+              <Calendar className="w-3.5 h-3.5 text-[#C59A56]" />
               Select Batch Dates *
             </span>
-            <span className="text-xs normal-case font-normal text-[#6B917E]">4 Days / 3 Nights</span>
+            <span className="text-xs normal-case font-normal text-[#73796F]">4 Days / 3 Nights</span>
           </label>
           <select
             id="batchId"
             name="batchId"
             value={formData.batchId}
             onChange={handleChange}
-            className={`w-full px-4 py-3 rounded-xl border bg-[#FAF8F5] text-sm text-[#142820] focus:outline-none focus:ring-2 focus:ring-[#1E3A2F] transition-colors ${
-              errors.batchId ? 'border-red-400 bg-red-50/20' : 'border-[#CFDDD3] focus:border-[#1E3A2F]'
+            className={`w-full px-4 py-3 rounded-xl border bg-white text-sm text-[#303D32] focus:outline-none focus:ring-2 focus:ring-[#42634B] transition-colors ${
+              errors.batchId ? 'border-red-400 bg-red-50/20' : 'border-[#E7E5DA] focus:border-[#42634B]'
             }`}
           >
             {TRIP_CONFIG.batches.map((b) => (
@@ -235,33 +234,33 @@ export default function BookingForm({ defaultBatch = null }) {
 
         {/* Travelers Count Multiplier */}
         <div>
-          <label className="block text-xs font-semibold uppercase tracking-wider text-[#142820] mb-2 flex items-center justify-between">
+          <label className="block text-xs font-semibold uppercase tracking-wider text-[#303D32] mb-2 flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <Users className="w-3.5 h-3.5 text-[#C99E32]" />
+              <Users className="w-3.5 h-3.5 text-[#C59A56]" />
               Number of Travelers *
             </span>
-            <span className="text-xs normal-case font-normal text-[#6B917E]">
+            <span className="text-xs normal-case font-normal text-[#73796F]">
               Max 6 girls per booking
             </span>
           </label>
           
           <div className="flex items-center gap-3">
-            <div className="flex items-center border border-[#CFDDD3] rounded-xl overflow-hidden bg-[#FAF8F5]">
+            <div className="flex items-center border border-[#E7E5DA] rounded-xl overflow-hidden bg-white">
               <button
                 type="button"
                 onClick={() => handleTravelerChange(formData.travelers - 1)}
-                className="px-4 py-2.5 text-[#1E3A2F] hover:bg-[#E7EEE9] font-bold text-base transition-colors cursor-pointer"
+                className="px-4 py-2.5 text-[#42634B] hover:bg-[#F3F5EC] font-bold text-base transition-colors cursor-pointer"
                 aria-label="Decrease travelers"
               >
                 -
               </button>
-              <span className="px-5 py-2.5 font-semibold text-sm text-[#142820] min-w-12 text-center bg-white">
+              <span className="px-5 py-2.5 font-semibold text-sm text-[#303D32] min-w-12 text-center bg-[#FFFCF6]">
                 {formData.travelers}
               </span>
               <button
                 type="button"
                 onClick={() => handleTravelerChange(formData.travelers + 1)}
-                className="px-4 py-2.5 text-[#1E3A2F] hover:bg-[#E7EEE9] font-bold text-base transition-colors cursor-pointer"
+                className="px-4 py-2.5 text-[#42634B] hover:bg-[#F3F5EC] font-bold text-base transition-colors cursor-pointer"
                 aria-label="Increase travelers"
               >
                 +
@@ -269,11 +268,11 @@ export default function BookingForm({ defaultBatch = null }) {
             </div>
 
             {/* Dynamic Total calculation tag */}
-            <div className="flex-1 bg-[#FAF8F5] border border-[#E8E1D7] px-4 py-2.5 rounded-xl flex items-center justify-between">
-              <span className="text-xs text-[#6B917E]">
+            <div className="flex-1 bg-[#F3F5EC] border border-[#E7E5DA] px-4 py-2.5 rounded-xl flex items-center justify-between">
+              <span className="text-xs text-[#73796F]">
                 ₹{pricePerPerson.toLocaleString()} × {formData.travelers}
               </span>
-              <span className="font-serif text-lg font-bold text-[#1E3A2F]">
+              <span className="font-serif text-lg font-bold text-[#42634B]">
                 = ₹{totalAmount.toLocaleString()}*
               </span>
             </div>
@@ -283,7 +282,7 @@ export default function BookingForm({ defaultBatch = null }) {
         {/* Contact info grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="fullName" className="block text-xs font-semibold uppercase tracking-wider text-[#142820] mb-1.5">
+            <label htmlFor="fullName" className="block text-xs font-semibold uppercase tracking-wider text-[#303D32] mb-1.5">
               Full Name *
             </label>
             <input
@@ -293,8 +292,8 @@ export default function BookingForm({ defaultBatch = null }) {
               value={formData.fullName}
               onChange={handleChange}
               placeholder="e.g. Priya Sharma"
-              className={`w-full px-4 py-3 rounded-xl border bg-[#FAF8F5] text-sm text-[#142820] placeholder:text-[#9AA8A0] focus:outline-none focus:ring-2 focus:ring-[#1E3A2F] transition-colors ${
-                errors.fullName ? 'border-red-400 bg-red-50/20' : 'border-[#CFDDD3] focus:border-[#1E3A2F]'
+              className={`w-full px-4 py-3 rounded-xl border bg-white text-sm text-[#303D32] placeholder:text-[#A4ACA3] focus:outline-none focus:ring-2 focus:ring-[#42634B] transition-colors ${
+                errors.fullName ? 'border-red-400 bg-red-50/20' : 'border-[#E7E5DA] focus:border-[#42634B]'
               }`}
             />
             {errors.fullName && (
@@ -305,7 +304,7 @@ export default function BookingForm({ defaultBatch = null }) {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-[#142820] mb-1.5">
+            <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-[#303D32] mb-1.5">
               Email Address *
             </label>
             <input
@@ -315,8 +314,8 @@ export default function BookingForm({ defaultBatch = null }) {
               value={formData.email}
               onChange={handleChange}
               placeholder="priya@example.com"
-              className={`w-full px-4 py-3 rounded-xl border bg-[#FAF8F5] text-sm text-[#142820] placeholder:text-[#9AA8A0] focus:outline-none focus:ring-2 focus:ring-[#1E3A2F] transition-colors ${
-                errors.email ? 'border-red-400 bg-red-50/20' : 'border-[#CFDDD3] focus:border-[#1E3A2F]'
+              className={`w-full px-4 py-3 rounded-xl border bg-white text-sm text-[#303D32] placeholder:text-[#A4ACA3] focus:outline-none focus:ring-2 focus:ring-[#42634B] transition-colors ${
+                errors.email ? 'border-red-400 bg-red-50/20' : 'border-[#E7E5DA] focus:border-[#42634B]'
               }`}
             />
             {errors.email && (
@@ -329,7 +328,7 @@ export default function BookingForm({ defaultBatch = null }) {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="phone" className="block text-xs font-semibold uppercase tracking-wider text-[#142820] mb-1.5">
+            <label htmlFor="phone" className="block text-xs font-semibold uppercase tracking-wider text-[#303D32] mb-1.5">
               WhatsApp / Mobile Number *
             </label>
             <input
@@ -339,8 +338,8 @@ export default function BookingForm({ defaultBatch = null }) {
               value={formData.phone}
               onChange={handleChange}
               placeholder="+91 98765 43210"
-              className={`w-full px-4 py-3 rounded-xl border bg-[#FAF8F5] text-sm text-[#142820] placeholder:text-[#9AA8A0] focus:outline-none focus:ring-2 focus:ring-[#1E3A2F] transition-colors ${
-                errors.phone ? 'border-red-400 bg-red-50/20' : 'border-[#CFDDD3] focus:border-[#1E3A2F]'
+              className={`w-full px-4 py-3 rounded-xl border bg-white text-sm text-[#303D32] placeholder:text-[#A4ACA3] focus:outline-none focus:ring-2 focus:ring-[#42634B] transition-colors ${
+                errors.phone ? 'border-red-400 bg-red-50/20' : 'border-[#E7E5DA] focus:border-[#42634B]'
               }`}
             />
             {errors.phone && (
@@ -351,7 +350,7 @@ export default function BookingForm({ defaultBatch = null }) {
           </div>
 
           <div>
-            <label htmlFor="dietary" className="block text-xs font-semibold uppercase tracking-wider text-[#142820] mb-1.5">
+            <label htmlFor="dietary" className="block text-xs font-semibold uppercase tracking-wider text-[#303D32] mb-1.5">
               Dietary Preference
             </label>
             <select
@@ -359,7 +358,7 @@ export default function BookingForm({ defaultBatch = null }) {
               name="dietary"
               value={formData.dietary}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-xl border border-[#CFDDD3] bg-[#FAF8F5] text-sm text-[#142820] focus:outline-none focus:ring-2 focus:ring-[#1E3A2F]"
+              className="w-full px-4 py-3 rounded-xl border border-[#E7E5DA] bg-white text-sm text-[#303D32] focus:outline-none focus:ring-2 focus:ring-[#42634B]"
             >
               <option value="Vegetarian">Standard Vegetarian</option>
               <option value="Jain">Jain (No onion/garlic)</option>
@@ -371,7 +370,7 @@ export default function BookingForm({ defaultBatch = null }) {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wider text-[#142820] mb-1.5">
+          <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wider text-[#303D32] mb-1.5">
             Any questions, travel companion details or special notes
           </label>
           <textarea
@@ -381,28 +380,28 @@ export default function BookingForm({ defaultBatch = null }) {
             value={formData.message}
             onChange={handleChange}
             placeholder="Tell us if you're traveling solo or with friends, your preferred departure city, or questions about the trip..."
-            className="w-full px-4 py-3 rounded-xl border border-[#CFDDD3] bg-[#FAF8F5] text-sm text-[#142820] placeholder:text-[#9AA8A0] focus:outline-none focus:ring-2 focus:ring-[#1E3A2F]"
+            className="w-full px-4 py-3 rounded-xl border border-[#E7E5DA] bg-white text-sm text-[#303D32] placeholder:text-[#A4ACA3] focus:outline-none focus:ring-2 focus:ring-[#42634B]"
           />
         </div>
 
         {/* Live Calculation Callout */}
-        <div className="bg-[#FAF8F5] rounded-2xl border border-[#E8E1D7] p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="bg-[#F3F5EC] rounded-2xl border border-[#E7E5DA] p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#E7EEE9] text-[#1E3A2F] flex items-center justify-center shrink-0">
-              <ShieldCheck className="w-5 h-5 text-[#6B917E]" />
+            <div className="w-10 h-10 rounded-full bg-white text-[#42634B] flex items-center justify-center shrink-0 border border-[#E7E5DA]">
+              <ShieldCheck className="w-5 h-5 text-[#42634B]" />
             </div>
             <div>
-              <p className="text-xs font-semibold text-[#142820]">
+              <p className="text-xs font-semibold text-[#303D32]">
                 All-Inclusive Wellness Package
               </p>
-              <p className="text-[11px] text-[#6B917E]">
+              <p className="text-[11px] text-[#73796F]">
                 3N Stay + Meals + Yoga + Art Kit + Waterfall Trek
               </p>
             </div>
           </div>
           <div className="text-right">
-            <span className="text-[11px] text-[#6B917E] block">Estimated Total</span>
-            <span className="font-serif text-2xl font-bold text-[#1E3A2F]">
+            <span className="text-[11px] text-[#73796F] block">Estimated Total</span>
+            <span className="font-serif text-2xl font-bold text-[#42634B]">
               ₹{totalAmount.toLocaleString()}*
             </span>
           </div>
@@ -412,13 +411,13 @@ export default function BookingForm({ defaultBatch = null }) {
           type="submit"
           variant="primary"
           size="lg"
-          className="w-full text-center shadow-lg hover:shadow-xl"
+          className="w-full text-center shadow-md hover:shadow-lg"
           icon={Sparkles}
         >
           Submit Booking Enquiry (₹{totalAmount.toLocaleString()}*)
         </Button>
 
-        <p className="text-center text-[11px] text-[#6B917E] leading-relaxed">
+        <p className="text-center text-[11px] text-[#73796F] leading-relaxed">
           * ₹9,499 is a demonstration placeholder price. Submitting this form tests frontend validation and simulates an enquiry confirmation. No payment is charged.
         </p>
       </form>

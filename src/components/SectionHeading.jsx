@@ -20,31 +20,29 @@ export default function SectionHeading({
       {tag && (
         <div className={`inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs uppercase tracking-widest font-semibold mb-3 ${
           light
-            ? 'bg-white/15 text-white/90 border border-white/20'
-            : 'bg-[#E7EEE9] text-[#294D3F] border border-[#CFDDD3]'
+            ? 'bg-white/90 text-[#303D32] border border-white/60 shadow-xs'
+            : 'bg-[#F3F5EC] text-[#42634B] border border-[#E7E5DA]'
         }`}>
-          <Sparkles className="w-3 h-3 text-[#C99E32]" />
+          <Sparkles className="w-3 h-3 text-[#C59A56]" />
           <span>{tag}</span>
         </div>
       )}
 
       <h2 className={`font-serif text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight leading-tight mb-4 ${
-        light ? 'text-white' : 'text-[#142820]'
+        light ? 'text-white drop-shadow-sm' : 'text-[#303D32]'
       }`}>
         {title}
       </h2>
 
       {subtitle && (
         <p className={`text-base sm:text-lg leading-relaxed ${
-          light ? 'text-[#FAF8F5]/80 font-light' : 'text-[#4A5D53]'
+          light ? 'text-white/95 font-light' : 'text-[#73796F]'
         }`}>
           {subtitle}
         </p>
       )}
 
-      <div className={`w-16 h-0.5 rounded-full mt-4 ${
-        light ? 'bg-[#C99E32]/70' : 'bg-[#C99E32]'
-      }`} />
+      <div className="w-16 h-0.5 rounded-full mt-4 bg-[#C59A56]" />
     </div>
   );
 }

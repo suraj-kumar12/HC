@@ -30,10 +30,11 @@ export default function BackToTop() {
     <button
       type="button"
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-30 p-3 rounded-full bg-[#1E3A2F] text-[#FAF8F5] shadow-lg shadow-[#1E3A2F]/30 hover:bg-[#142820] hover:scale-110 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#C99E32] cursor-pointer border border-[#D4AF37]/40"
+      className="fixed bottom-23 right-7 z-30 p-2.5 rounded-full bg-white text-[#42634B] shadow-md hover:bg-[#F3F5EC] hover:scale-105 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#42634B] cursor-pointer border border-[#E7E5DA] print:hidden"
       aria-label="Back to top"
+      title="Scroll to top"
     >
-      <ArrowUp className="w-5 h-5 text-[#E5C66C]" />
+      <ArrowUp className="w-4 h-4 text-[#42634B]" />
     </button>
   );
 }

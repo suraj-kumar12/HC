@@ -23,7 +23,7 @@ export default function FAQAccordion({ limit = null, showFilter = true }) {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
-      {/* Category Pills (optional) */}
+      {/* Category Pills */}
       {showFilter && (
         <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
           {categories.map((cat) => (
@@ -33,8 +33,8 @@ export default function FAQAccordion({ limit = null, showFilter = true }) {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${
                 activeCategory === cat
-                  ? 'bg-[#1E3A2F] text-white shadow-sm'
-                  : 'bg-white text-[#4A5D53] border border-[#CFDDD3] hover:border-[#1E3A2F] hover:bg-[#FAF8F5]'
+                  ? 'bg-[#42634B] text-white shadow-xs'
+                  : 'bg-white text-[#73796F] border border-[#E7E5DA] hover:border-[#42634B] hover:text-[#303D32] hover:bg-[#F3F5EC]'
               }`}
             >
               {cat}
@@ -51,8 +51,8 @@ export default function FAQAccordion({ limit = null, showFilter = true }) {
           return (
             <div key={section.category} className="space-y-3">
               {activeCategory === "All" && (
-                <h3 className="font-serif text-lg font-semibold text-[#142820] pt-4 pb-1 border-b border-[#CFDDD3]/60 flex items-center gap-2">
-                  <HelpCircle className="w-4 h-4 text-[#C99E32]" />
+                <h3 className="font-serif text-lg font-semibold text-[#303D32] pt-4 pb-1 border-b border-[#E7E5DA] flex items-center gap-2">
+                  <HelpCircle className="w-4 h-4 text-[#C59A56]" />
                   {section.category}
                 </h3>
               )}
@@ -64,26 +64,26 @@ export default function FAQAccordion({ limit = null, showFilter = true }) {
                 return (
                   <div
                     key={item.question}
-                    className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
+                    className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${
                       isOpen
-                        ? 'bg-white border-[#1E3A2F]/30 shadow-md shadow-[#1E3A2F]/5'
-                        : 'bg-white/80 border-[#E8E1D7] hover:border-[#B2C9B9] hover:bg-white'
+                        ? 'border-[#42634B]/40 shadow-md'
+                        : 'border-[#E7E5DA] hover:border-[#8FA58A]'
                     }`}
                   >
                     <button
                       type="button"
                       onClick={() => toggleItem(key)}
                       aria-expanded={isOpen}
-                      className="w-full px-5 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between gap-4 focus:outline-none focus:ring-2 focus:ring-[#1E3A2F] focus:ring-inset cursor-pointer"
+                      className="w-full px-5 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between gap-4 focus:outline-none focus:ring-2 focus:ring-[#42634B] focus:ring-inset cursor-pointer"
                     >
-                      <span className="font-serif text-base sm:text-lg font-medium text-[#142820] leading-snug">
+                      <span className="font-serif text-base sm:text-lg font-medium text-[#303D32] leading-snug">
                         {item.question}
                       </span>
                       <div
                         className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
                           isOpen
-                            ? 'bg-[#1E3A2F] text-white rotate-180'
-                            : 'bg-[#F4EFE6] text-[#1E3A2F]'
+                            ? 'bg-[#42634B] text-white rotate-180'
+                            : 'bg-[#F3F5EC] text-[#42634B]'
                         }`}
                       >
                         <ChevronDown className="w-4 h-4" />
@@ -91,7 +91,7 @@ export default function FAQAccordion({ limit = null, showFilter = true }) {
                     </button>
 
                     {isOpen && (
-                      <div className="px-5 sm:px-6 pb-5 pt-1 text-sm sm:text-base text-[#4A5D53] leading-relaxed border-t border-[#FAF8F5] animate-fade-in">
+                      <div className="px-5 sm:px-6 pb-5 pt-1 text-sm sm:text-base text-[#73796F] leading-relaxed border-t border-[#F3F5EC] animate-fade-in">
                         {item.answer}
                       </div>
                     )}

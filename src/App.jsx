@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
+import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
 
 // Pages
@@ -18,9 +19,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen bg-[#FAF8F5] text-[#2C3E35] selection:bg-[#E7EEE9] selection:text-[#1E3A2F]">
-        {/* Top Demo Notice Banner */}
-
+      <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32] selection:bg-[#F3F5EC] selection:text-[#42634B]">
         {/* Global Navigation */}
         <Navbar />
 
@@ -40,8 +39,9 @@ export default function App() {
         {/* Global Footer */}
         <Footer />
 
-        {/* Floating Back to Top Button */}
+        {/* Floating Utilities */}
         <BackToTop />
+        <WhatsAppButton />
       </div>
     </BrowserRouter>
   );
