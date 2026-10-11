@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-forest-950: #0C1913;
+  --color-forest-900: #142820;
+  --color-forest-800: #1E3A2F;
+  --color-forest-700: #294D3F;
+  --color-forest-600: #386453;
+  --color-forest-500: #4B7C69;
+
+  --color-sage-50: #F5F8F6;
+  --color-sage-100: #E7EEE9;
+  --color-sage-200: #D0DFD4;
+  --color-sage-300: #B2C9B9;
+  --color-sage-400: #8FAFA8;
+  --color-sage-500: #6B917E;
+  --color-sage-600: #547363;
+
+  --color-cream-50: #FDFCF9;
+  --color-cream-100: #FAF8F5;
+  --color-cream-200: #F4EFE6;
+  --color-cream-300: #ECE3D4;
+  --color-cream-400: #DFD2BC;
+
+  --color-gold-300: #F5E2A8;
+  --color-gold-400: #E5C66C;
+  --color-gold-500: #C99E32;
+  --color-gold-600: #AC8220;
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: #FAF8F5;
+  color: #26332C;
+  overflow-x: hidden;
+}
+
+/* Custom Utilities */
+.font-display {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+/* Glassmorphism */
+.glass-header {
+  background: rgba(253, 251, 248, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(230, 222, 210, 0.7);
+}
+
+.glass-dark {
+  background: rgba(20, 40, 32, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Subtle texture & leaf motifs */
+.subtle-pattern {
+  background-image: radial-gradient(#1E3A2F 0.5px, transparent 0.5px), radial-gradient(#1E3A2F 0.5px, #FAF8F5 0.5px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  opacity: 0.96;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D3C9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8FAFA8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
