@@ -486,34 +486,6 @@ export default function Home() {
       </section>
 
 
-      {/* 7. OFFICIAL BROCHURE PREVIEW STRIP */}
-      <section className="py-16 sm:py-20 bg-white border-y border-[#E7E5DA]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-[#E7E5DA]">
-            <div className="text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3F5EC] text-xs uppercase tracking-wider text-[#42634B] font-semibold mb-2 border border-[#E7E5DA]">
-                <FileText className="w-3.5 h-3.5 text-[#C59A56]" />
-                <span>Original Documents</span>
-              </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#303D32]">
-                Official 14-Page Retreat Brochure
-              </h3>
-              <p className="text-xs sm:text-sm text-[#73796F] mt-1">
-                Browse through all 14 official itinerary slides, stay sheets, pricing breakdown, and trip terms.
-              </p>
-            </div>
-            <Button to="/gallery" variant="outline" size="sm" icon={Eye}>
-              View All 14 Slides in Lightbox
-            </Button>
-          </div>
-
-          <div className="mt-8">
-            <BrochureSlider pages={TRIP_CONFIG.brochurePages} />
-          </div>
-        </div>
-      </section>
-
-
       {/* 8. INCLUSIONS & EXCLUSIONS - LIGHT THEME */}
       <section className="py-20 sm:py-28 bg-[#FFFCF6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

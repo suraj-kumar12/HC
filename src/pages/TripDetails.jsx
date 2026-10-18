@@ -85,7 +85,7 @@ export default function TripDetails() {
             <span className="text-[#E7E5DA] font-bold">•</span>
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4 text-[#C59A56]" />
-              <span className="font-medium">10-14 Girls Only</span>
+              {/* <span className="font-medium">10-14 Girls Only</span> */}
             </div>
             <span className="text-[#E7E5DA] font-bold">•</span>
             <div className="flex items-center gap-1.5">
