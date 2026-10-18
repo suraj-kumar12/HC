@@ -3,11 +3,11 @@
  */
 
 export const GALLERY_DATA = [
-  // 1. REAL MOMENTS & SISTERHOOD
+  // 1. REAL MOMENTS & CONNECTIONS
   {
     id: "real-1",
     src: "/images/real-group-mountain.jpg",
-    title: "Sisterhood in the Valley",
+    title: "Together in the Valley",
     category: "Real Moments",
     description: "Our circle of 10 girls smiling together on the mountain ridge overlooking the lush Sainj valley."
   },
@@ -41,10 +41,10 @@ export const GALLERY_DATA = [
   },
   {
     id: "real-6",
-    src: "/images/real-sisterhood-selfie.jpg",
+    src: "/images/real-girls-connection-selfie.jpg",
     title: "Trail Smiles & New Friendships",
     category: "Real Moments",
-    description: "Lifelong sisterhood bonds formed through unhurried shared experiences in the mountains."
+    description: "Lifelong bonds formed through unhurried shared experiences in the mountains."
   },
 
   // 2. SHANGARH MEADOWS & NATURE

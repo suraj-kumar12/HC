@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const SITE_URL = 'https://healingcircle.travel';
 const DEFAULT_TITLE = 'Healing Circle – Shangarh Girls Trip | Mindful Himalayan Retreat';
-const DEFAULT_DESC = 'An intimate, transformative girls-only travel & wellness retreat to Shangarh, Sainj Valley, Himachal Pradesh. Alpine meadows, sunrise yoga, waterfall treks, and deep sisterhood.';
+const DEFAULT_DESC = 'An intimate, transformative girls-only travel & wellness retreat to Shangarh, Sainj Valley, Himachal Pradesh. Alpine meadows, sunrise yoga, waterfall treks, and deep.';
 const DEFAULT_IMAGE = `${SITE_URL}/images/real-temple-meadow.jpg`;
 
 export default function SEO({

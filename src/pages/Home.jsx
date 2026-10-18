@@ -40,7 +40,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
       <SEO
         title="Healing Circle – Shangarh Girls Trip | Mindful Himalayan Retreat"
-        description="An intimate, transformative girls-only travel & wellness retreat to Shangarh, Sainj Valley, Himachal Pradesh. Alpine meadows, sunrise yoga, waterfall treks, and deep sisterhood."
+        description="An intimate, transformative girls-only travel & wellness retreat to Shangarh, Sainj Valley, Himachal Pradesh. Alpine meadows, sunrise yoga, waterfall treks, and deep ."
         canonical="/"
         image="/images/real-temple-meadow.jpg"
       />
@@ -74,12 +74,12 @@ export default function Home() {
           {/* Pill Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#E7E5DA] text-xs uppercase tracking-widest text-[#42634B] font-semibold mb-6 shadow-xs animate-fade-in">
             <Sparkles className="w-3.5 h-3.5 text-[#C59A56]" />
-            <span>Healing Circle • Shangarh Girls Trip • 10-14 Women Only</span>
+            <span>Healing Circle • Shangarh Girls Trip</span>
           </div>
 
           {/* Heading */}
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-7xl font-semibold tracking-tight leading-[1.12] mb-6 text-[#303D32] max-w-4xl">
-            Sisterhood, Stillness & Alpine Meadows
+            Stillness & Alpine Meadows
           </h1>
 
           {/* Subtitle */}
@@ -293,7 +293,7 @@ export default function Home() {
           <SectionHeading
             tag="Mindful Experiences"
             title="Curated Activities in the Valley"
-            subtitle="Every experience is crafted to nourish your spirit, inspire your creativity, and build real sisterhood."
+            subtitle="Every experience is crafted to nourish your spirit, inspire your creativity, and build real."
           />
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
@@ -706,7 +706,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             tag="Circle Voices"
-            title="Reflections from Sisterhood Travelers"
+            title="Reflections from Travelers"
             subtitle="Heartfelt stories shared by women who have journeyed to Shangarh with us."
           />
 
@@ -790,14 +790,14 @@ export default function Home() {
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white text-xs uppercase tracking-widest text-[#42634B] font-semibold mb-4 border border-[#E7E5DA] shadow-xs">
             <Sparkles className="w-3.5 h-3.5 text-[#C59A56]" />
-            <span>Limited to 10-14 Women Only</span>
+            {/* <span>Limited to 10-14 Women Only</span> */}
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl font-semibold mb-4 leading-tight text-[#303D32]">
             Ready to Find Stillness in the Meadows?
           </h2>
           <p className="text-sm sm:text-base text-[#73796F] mb-8 font-normal leading-relaxed">
-            Gift yourself 3 days of peace, sisterhood, crisp mountain winds, and unhurried days in Shangarh.
+            Gift yourself 3 days of peace, crisp mountain winds, and unhurried days in Shangarh.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -23,7 +23,7 @@ export const TESTIMONIALS_DATA = {
       tripDate: "Past Batch Demo",
       role: "Product Designer",
       avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80",
-      quote: "The wooden homestay, the crackling night bonfires, and the watercolor painting afternoon amidst towering pine trees felt like stepping into a storybook. The sisterhood bond formed in just 4 days was magical.",
+      quote: "The wooden homestay, the crackling night bonfires, and the watercolor painting afternoon amidst towering pine trees felt like stepping into a storybook. The bond formed in just 4 days was magical.",
       highlight: "A true soul-reset away from corporate screens."
     },
     {

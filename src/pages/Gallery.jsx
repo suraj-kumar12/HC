@@ -37,7 +37,7 @@ export default function Gallery() {
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
       <SEO
         title="Retreat Photo Gallery & Brochure | Healing Circle Shangarh"
-        description="Browse real photographs and the official 14-page brochure of our Shangarh girls retreat. Scenic alpine meadows, Kathkuni homestay, waterfalls, and sisterhood moments."
+        description="Browse real photographs and the official 14-page brochure of our Shangarh girls retreat. Scenic alpine meadows, Kathkuni homestay, waterfalls, and  moments."
         canonical="/gallery"
         image="/images/real-group-mountain.jpg"
       />
@@ -180,7 +180,7 @@ export default function Gallery() {
             Experience These Views Firsthand
           </h2>
           <p className="text-sm sm:text-base text-[#73796F] mb-8 font-normal leading-relaxed">
-            Our intimate Shangarh retreat brings together 10-14 women for 3 unforgettable days of wellness and sisterhood.
+            Our intimate Shangarh retreat brings together 10-14 women for 3 unforgettable days of wellness and .
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

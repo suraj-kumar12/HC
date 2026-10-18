@@ -24,7 +24,7 @@ export default function Footer() {
             </Link>
             
             <p className="text-sm text-[#73796F] leading-relaxed max-w-sm mb-6 font-light">
-              A curated Himalayan wellness and travel collective dedicated exclusively to women. Slow travel, gentle mindfulness, creative arts, and deep sisterhood in the whispering pine meadows of Shangarh.
+              A curated Himalayan wellness and travel collective dedicated exclusively to women. Slow travel, gentle mindfulness, creative arts, and deep  in the whispering pine meadows of Shangarh.
             </p>
 
             <div className="flex items-center gap-2 text-xs text-[#42634B] bg-white border border-[#E7E5DA] px-3.5 py-2 rounded-full w-fit shadow-2xs">

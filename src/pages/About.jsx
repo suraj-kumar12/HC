@@ -49,7 +49,7 @@ export default function About() {
           </h1>
 
           <p className="text-base sm:text-xl text-[#73796F] font-normal max-w-2xl mx-auto leading-relaxed">
-            Born from a simple belief: that every woman deserves a space to set down her burdens, breathe unfiltered cedar air, and be held by the mountain sisterhood.
+            Born from a simple belief: that every woman deserves a space to set down her burdens, breathe unfiltered cedar air, and be held by the mountain .
           </p>
         </div>
       </section>
@@ -141,7 +141,7 @@ export default function About() {
                 <Heart className="w-6 h-6 text-[#42634B]" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-[#303D32] mb-2">
-                1. Safe Sisterhood
+                1. Safe 
               </h3>
               <p className="text-xs sm:text-sm text-[#73796F] leading-relaxed">
                 An all-women sanctuary curated for psychological safety, emotional warmth, mutual respect, and genuine friendship without competition.

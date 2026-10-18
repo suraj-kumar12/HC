@@ -7,7 +7,7 @@ function Logo({ className = '' }) {
   return (
     <img
       src="/images/image.png" 
-      alt="Healing Circle — Travel, Wellness, Sisterhood"
+      alt="Healing Circle — Travel, Wellness"
       className={`h-auto w-full object-contain ${className}`}
     />
   );

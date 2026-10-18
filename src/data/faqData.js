@@ -8,7 +8,7 @@ export const FAQ_DATA = [
     items: [
       {
         question: "Can I join solo as a female traveler?",
-        answer: "Absolutely! Over 80% of our attendees join completely solo. The core philosophy of Healing Circle is creating an instantly warm, non-judgmental sisterhood where no one feels left out. You will be matched with a lovely roommate or have your own space, and you'll make friends from Day 1."
+        answer: "Absolutely! Over 80% of our attendees join completely solo. The core philosophy of Healing Circle is creating an instantly warm, non-judgmental where no one feels left out. You will be matched with a lovely roommate or have your own space, and you'll make friends from Day 1."
       },
       {
         question: "Who will be leading and hosting the trip?",

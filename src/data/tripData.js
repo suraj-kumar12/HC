@@ -52,7 +52,7 @@ export const TRIP_CONFIG = {
     },
     {
       title: "Bonfire & Music Under the Stars",
-      description: "Evening acoustic vibes, warm fireside dancing, starry sky views and deep sisterhood bonding.",
+      description: "Evening acoustic vibes, warm fireside dancing, starry sky views and meaningful circle bonding.",
       icon: "Flame",
       image: "/images/real-bonfire-gathering.jpg"
     },
@@ -103,7 +103,7 @@ export const TRIP_CONFIG = {
       day: "Day 2",
       date: "Saturday",
       title: "Meadows, Shangchul Mahadev Temple, Painting & Bonfire",
-      theme: "Stillness, Creativity & Sisterhood",
+      theme: "Stillness, Creativity",
       description: "Wake to birdsong. Begin with relaxing yoga & meditation, walk across the sacred Shangarh meadow, explore local cafes, create art on wooden planks, and dance by the bonfire.",
       schedule: [
         { time: "07:30 AM", activity: "Short & relaxing Yoga and Meditation session in fresh mountain air, followed by hearty breakfast." },
@@ -125,7 +125,7 @@ export const TRIP_CONFIG = {
         { time: "07:30 AM", activity: "Morning Yoga & Meditation session followed by early breakfast and homestay checkout." },
         { time: "10:00 AM", activity: "Enjoy a short picturesque hike (approx. 1 KM) to the roadside gem: Rupi Raila Waterfall." },
         { time: "02:00 PM", activity: "Lunch pitstop and embark on return road journey towards Chandigarh / Delhi via scenic Himachal roads." },
-        { time: "Next Morning", activity: "Arrive in Delhi by 4:00 - 5:00 AM with a phone full of photos & videos, and a heart full of lifelong sisterhood memories." }
+        { time: "Next Morning", activity: "Arrive in Delhi by 4:00 - 5:00 AM with a phone full of photos & videos, and a heart full of lifelong memories." }
       ],
       image: "/images/real-group-mountain.jpg"
     }
@@ -159,7 +159,7 @@ export const TRIP_CONFIG = {
     {
       id: "act-4",
       title: "Nightly Bonfires & Music Circles",
-      category: "Sisterhood",
+      category: "Circle & Community",
       description: "Gather around crackling campfires under fairy-lit trees with music, laughter, dancing, and heartfelt conversations.",
       duration: "Every Evening",
       image: "/images/real-bonfire-gathering.jpg"
@@ -188,7 +188,6 @@ export const TRIP_CONFIG = {
     tagline: "Blooming chamomile gardens, mountain-view balconies, and cozy wooden warmth",
     description: "Our handpicked traditional wooden cottage features handcrafted cedar wood interiors, clean comfortable double-sharing bedrooms with warm quilts, spacious panoramic balconies with cushions ('Prem Patra' deck), and fairy-lit bonfire spaces overlooking snow-kissed peaks.",
     features: [
-      "2 Nights stay in an authentic Kathkuni wooden homestay on double sharing",
       "Blooming chamomile flower garden and sunlit mountain balconies",
       "Ensuite clean washrooms with running hot water geysers",
       "Cozy wooden bedrooms with plush crimson duvets and heated blankets",
@@ -219,7 +218,7 @@ export const TRIP_CONFIG = {
     "Therapeutic Mud Bath & forest bathing experience",
     "Nightly bonfires with music, dancing, and stargazing",
     "Village & pine forest nature walks with local guidance",
-    "Dedicated female trip facilitators ensuring a safe, supportive sisterhood environment"
+    "Dedicated female trip facilitators ensuring a safe, supportive  environment"
   ],
 
   exclusions: [
