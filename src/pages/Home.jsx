@@ -215,7 +215,7 @@ export default function Home() {
               </div>
 
               {/* Floating badge card */}
-              <div className="absolute -top-6 -left-4 sm:left-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-[#E7E5DA] max-w-xs">
+              <div className="absolute -top-19 -left-4 sm:left-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-[#E7E5DA] max-w-xs">
                 <div className="flex items-center gap-2 mb-1">
                   <Heart className="w-4 h-4 text-[#C59A56] fill-[#C59A56]" />
                   <span className="text-xs font-bold text-[#303D32]">100% Women Safe Circle</span>

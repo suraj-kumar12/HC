@@ -20,7 +20,7 @@ export const TRIP_CONFIG = {
     { id: "pkg-starting",  label: "Starting Price",         sharing: "Starting",       price: 6999 },
     { id: "pkg-quad-a",    label: "Quad Sharing Package",   sharing: "Quad Sharing",   price: 7499 },
     { id: "pkg-triple",    label: "Triple Sharing Package", sharing: "Triple Sharing", price: 8499 },
-    { id: "pkg-quad-b",    label: "Quad Sharing Package",   sharing: "Quad Sharing",   price: 9499 }
+    { id: "pkg-quad-b",    label: "Double Sharing Package",   sharing: "Double Sharing",   price: 9499 }
   ],
 
   // Thursday – Sunday batch format

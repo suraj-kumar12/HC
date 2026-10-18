@@ -59,7 +59,7 @@ export const FAQ_DATA = [
     items: [
       {
         question: "What is included in the package price?",
-        answer: "Our packages start at ₹6,999 per person and include boutique wooden homestay accommodation on sharing basis, daily farm-to-table vegetarian breakfasts and dinners, all wellness and yoga workshops, art supplies, guided waterfall trek, bonfires, and 24/7 female facilitation. Package options: Starting Price ₹6,999 | Quad Sharing ₹7,499 | Triple Sharing ₹8,499 | Quad Sharing ₹9,499."
+        answer: "Our packages start at ₹6,999 per person and include boutique wooden homestay accommodation on sharing basis, daily farm-to-table vegetarian breakfasts and dinners, all wellness and yoga workshops, art supplies, guided waterfall trek, bonfires, and 24/7 female facilitation. Package options: Starting Price ₹6,999 | Quad Sharing ₹7,499 | Triple Sharing ₹8,499 | Double Sharing ₹9,499."
       },
       {
         question: "Is this a real booking or a demo website?",
