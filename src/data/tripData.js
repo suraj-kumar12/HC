@@ -5,30 +5,37 @@
 
 export const TRIP_CONFIG = {
   title: "Healing Circle – Shangarh Girls Trip",
-  tagline: "A Mindful Himalayan Retreat for Women & Soul Sisters",
+  tagline: "A Mindful Himalayan Retreat for Women in the Heart of the Himalayas",
   location: "Shangarh, Sainj Valley, Kullu, Himachal Pradesh",
   altitude: "6,900 ft (2,100 m) above sea level",
-  duration: "3 Days / 2 Nights (4D with Overnight Travel)",
-  // groupSize: "10 – 14 Girls Only",
-  basePrice: 9499, // Official brochure price: INR 9,499 per person Double Sharing
-  priceNote: "₹9,499 per person (Double Sharing • 50% Advance to Reserve)",
+  duration: "3 Nights / 4 Days",
+  basePrice: 6999, // Starting price: INR 6,999 per person
+  priceNote: "Starting from ₹6,999 per person (50% Advance to Reserve)",
   gstNote: "5% GST applicable additionally",
   currency: "₹",
   leadInstructor: "Healing Circle Team (Certified Women Guides & Local Hosts)",
-  
-  // Real brochure batches & upcoming dates
+
+  // Client-specified pricing packages
+  packages: [
+    { id: "pkg-starting",  label: "Starting Price",         sharing: "Starting",       price: 6999 },
+    { id: "pkg-quad-a",    label: "Quad Sharing Package",   sharing: "Quad Sharing",   price: 7499 },
+    { id: "pkg-triple",    label: "Triple Sharing Package", sharing: "Triple Sharing", price: 8499 },
+    { id: "pkg-quad-b",    label: "Quad Sharing Package",   sharing: "Quad Sharing",   price: 9499 }
+  ],
+
+  // Thursday – Sunday batch format
   batches: [
-    { id: "batch-1", dates: "03rd – 06th September", status: "Primary Featured Batch", seatsLeft: 2 },
-    { id: "batch-2", dates: "17th – 20th September", status: "Filling Fast", seatsLeft: 4 },
-    { id: "batch-3", dates: "08th – 11th October", status: "Autumn Special", seatsLeft: 6 },
-    { id: "batch-4", dates: "29th Oct – 01st Nov", status: "Diwali Long Weekend", seatsLeft: 8 }
+    { id: "batch-1", dates: "Thursday – Sunday Batch", status: "Upcoming Batch",      seatsLeft: 6 },
+    { id: "batch-2", dates: "Thursday – Sunday Batch", status: "Limited Seats",       seatsLeft: 4 },
+    { id: "batch-3", dates: "Thursday – Sunday Batch", status: "Autumn Special",      seatsLeft: 8 },
+    { id: "batch-4", dates: "Thursday – Sunday Batch", status: "Festive Long Weekend", seatsLeft: 5 }
   ],
 
   stats: [
-    { label: "Group Size", value: "10-14 Girls", sub: "100% Women-Only" },
-    { label: "Trip Duration", value: "3D / 2N", sub: "+ Overnight Travel" },
-    { label: "Price per Person", value: "₹9,499", sub: "Double Sharing" },
-    { label: "Departure", value: "Delhi / Chd", sub: "AC Bus & Mountain Taxi" }
+    { label: "Trip Duration",   value: "3N / 4D",  sub: "+ Overnight Travel"        },
+    { label: "Starting Price",  value: "₹6,999",   sub: "Per Person"                },
+    { label: "Batch Schedule",  value: "Thu–Sun",  sub: "Thursday to Sunday"        },
+    { label: "Departure",       value: "Delhi / Chd", sub: "AC Bus & Mountain Taxi" }
   ],
 
   highlights: [
@@ -76,7 +83,7 @@ export const TRIP_CONFIG = {
       date: "Thursday",
       title: "Delhi / Chandigarh to Shangarh (Overnight Journey)",
       theme: "Departure & The Mountain Road",
-      description: "Meet your sister circle in Delhi or Chandigarh. Settle into our comfortable AC transport and embark on an exciting overnight journey towards the serenity of Himachal Pradesh.",
+      description: "Meet your travel group in Delhi or Chandigarh. Settle into our comfortable AC transport and embark on an exciting overnight journey towards the serenity of Himachal Pradesh.",
       schedule: [
         { time: "10:00 PM", activity: "Departure from Akshardham Metro Station / Kashmiri Gate Bus Stand (Delhi). Meet & greet with group and luggage loading." },
         { time: "02:00 AM", activity: "Quick halt near Chandigarh for tea, snacks and freshening up." },
@@ -184,9 +191,9 @@ export const TRIP_CONFIG = {
 
   accommodation: {
     name: "Our Shangarh Wooden Homestay",
-    type: "Authentic Kathkuni Himalayan Cedar Cottage",
+    type: "Traditional Himalayan Cedar Cottage",
     tagline: "Blooming chamomile gardens, mountain-view balconies, and cozy wooden warmth",
-    description: "Our handpicked traditional wooden cottage features handcrafted cedar wood interiors, clean comfortable double-sharing bedrooms with warm quilts, spacious panoramic balconies with cushions ('Prem Patra' deck), and fairy-lit bonfire spaces overlooking snow-kissed peaks.",
+    description: "Our handpicked traditional wooden cottage features handcrafted cedar wood interiors, clean comfortable bedrooms with warm quilts, spacious panoramic balconies with cushions ('Prem Patra' deck), and fairy-lit bonfire spaces overlooking snow-kissed peaks.",
     features: [
       "Blooming chamomile flower garden and sunlit mountain balconies",
       "Ensuite clean washrooms with running hot water geysers",
@@ -285,7 +292,7 @@ export const TRIP_CONFIG = {
     { page: 8, title: "Day 3: Yoga, Rupi Raila Waterfall & Departure", src: "/images/page-8.jpg" },
     { page: 9, title: "Inclusions: Travel, Stay, Meals & Activities", src: "/images/page-9.jpg" },
     { page: 10, title: "Our Stay: 12 Real Photos of Homestay", src: "/images/page-10.jpg" },
-    { page: 11, title: "Costing: INR 9,499 per person Double Sharing", src: "/images/page-11.jpg" },
+    { page: 11, title: "Costing: Starting from ₹6,999 per person", src: "/images/page-11.jpg" },
     { page: 12, title: "Photo Gallery: Real Trip Memories", src: "/images/page-12.jpg" },
     { page: 13, title: "Terms & Conditions & Booking Policy", src: "/images/page-13.jpg" },
     { page: 14, title: "Thank You & Direct Contact: +91 8586020962", src: "/images/page-14.jpg" }

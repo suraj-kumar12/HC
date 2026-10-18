@@ -201,7 +201,7 @@ export default function Navbar() {
                 icon={Sparkles}
                 onClick={() => setIsOpen(false)}
               >
-                Book Your Spot (₹9,499)
+                Book Your Spot (₹6,999)
               </Button>
             </div>
           </div>

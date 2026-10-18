@@ -208,7 +208,7 @@ export default function BookingForm({ defaultBatch = null }) {
               <Calendar className="w-3.5 h-3.5 text-[#C59A56]" />
               Select Batch Dates *
             </span>
-            <span className="text-xs normal-case font-normal text-[#73796F]">4 Days / 3 Nights</span>
+            <span className="text-xs normal-case font-normal text-[#73796F]">3 Nights / 4 Days</span>
           </label>
           <select
             id="batchId"
@@ -418,7 +418,7 @@ export default function BookingForm({ defaultBatch = null }) {
         </Button>
 
         <p className="text-center text-[11px] text-[#73796F] leading-relaxed">
-          * ₹9,499 is a demonstration placeholder price. Submitting this form tests frontend validation and simulates an enquiry confirmation. No payment is charged.
+          * Starting from ₹6,999 per person. Submitting this form tests frontend validation and simulates an enquiry confirmation. No payment is charged.
         </p>
       </form>
     </div>

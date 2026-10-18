@@ -40,7 +40,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
       <SEO
         title="Healing Circle – Shangarh Girls Trip | Mindful Himalayan Retreat"
-        description="An intimate, transformative girls-only travel & wellness retreat to Shangarh, Sainj Valley, Himachal Pradesh. Alpine meadows, sunrise yoga, waterfall treks, and deep ."
+      description="An intimate, transformative girls-only travel & wellness retreat to Shangarh, Sainj Valley, Himachal Pradesh. Alpine meadows, sunrise yoga, waterfall treks, and deep connection."
         canonical="/"
         image="/images/real-temple-meadow.jpg"
       />
@@ -91,19 +91,19 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm text-[#303D32] mb-10 bg-white/95 backdrop-blur-md px-6 py-3.5 rounded-2xl border border-[#E7E5DA] shadow-md">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-[#C59A56]" />
-              <span>Featured Batch: <strong className="text-[#303D32] font-semibold">{TRIP_CONFIG.batches[0].dates}</strong></span>
+              <span>Batch: <strong className="text-[#303D32] font-semibold">Thursday – Sunday</strong></span>
             </div>
             <span className="hidden sm:inline text-[#E7E5DA] font-bold">•</span>
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4 text-[#C59A56]" />
-              <span className="font-medium">{TRIP_CONFIG.groupSize}</span>
+              <span className="font-medium">{TRIP_CONFIG.duration}</span>
             </div>
             <span className="hidden sm:inline text-[#E7E5DA] font-bold">•</span>
             <div className="flex items-center gap-2">
               <span className="text-[#C59A56] font-serif font-bold text-base sm:text-lg">
-                ₹{TRIP_CONFIG.basePrice.toLocaleString()}*
+                Starting ₹{TRIP_CONFIG.basePrice.toLocaleString()}*
               </span>
-              <span className="text-[11px] text-[#73796F]">Double Sharing</span>
+              <span className="text-[11px] text-[#73796F]">per person</span>
             </div>
           </div>
 
@@ -116,7 +116,7 @@ export default function Home() {
               className="w-full sm:w-auto shadow-md hover:shadow-lg font-semibold"
               icon={Sparkles}
             >
-              Book Your Spot (₹9,499)
+              Book Your Spot (₹6,999)
             </Button>
 
             <a
@@ -149,7 +149,7 @@ export default function Home() {
               <Heart className="w-4 h-4 text-[#C59A56]" /> 100% Solo-Traveler Friendly & Safe
             </span>
             <span className="flex items-center gap-1.5">
-              <HomeIcon className="w-4 h-4 text-[#42634B]" /> Authentic Kathkuni Wooden Homestay
+              <HomeIcon className="w-4 h-4 text-[#42634B]" /> Cozy Wooden Homestay in Shangarh
             </span>
           </div>
         </div>
@@ -221,7 +221,7 @@ export default function Home() {
                   <span className="text-xs font-bold text-[#303D32]">100% Women Safe Circle</span>
                 </div>
                 <p className="text-[11px] text-[#73796F] leading-snug">
-                  "No pretense. Just open skies, pine forest scents, and sisters who listen."
+                  "No pretense. Just open skies, pine forest scents, and women who truly listen."
                 </p>
               </div>
             </div>
@@ -565,108 +565,147 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             tag="Investment in Yourself"
-            title="Retreat Pricing & Dates"
-            subtitle="Transparent rate for 3 Days / 2 Nights in Shangarh + overnight travel."
+            title="Retreat Pricing & Packages"
+            subtitle="3 Nights / 4 Days in Shangarh + overnight travel. Choose your preferred sharing option."
           />
 
-          <div className="mt-14 max-w-4xl mx-auto bg-white rounded-3xl border border-[#E7E5DA] shadow-xl shadow-[#42634B]/5 overflow-hidden text-left">
-            <div className="grid grid-cols-1 lg:grid-cols-12">
-              
-              {/* Pricing breakdown (Left) */}
-              <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#F3F5EC] text-[#42634B] border border-[#E7E5DA]">
-                      All-Inclusive Package
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#FFF8E7] text-[#9E7428] border border-[#EAD79D]">
-                      Double Sharing
-                    </span>
-                  </div>
-
-                  <h3 className="font-serif text-3xl font-semibold text-[#303D32] mb-2">
-                    Shangarh Circle Retreat
-                  </h3>
-                  <p className="text-sm text-[#73796F] mb-6">
-                    3D / 2N in Shangarh • Ex-Delhi / Chandigarh AC Bus & Mountain Taxi
-                  </p>
-
-                  <div className="flex items-baseline gap-2 mb-6">
-                    <span className="font-serif text-4xl sm:text-5xl font-bold text-[#42634B]">
-                      ₹{TRIP_CONFIG.basePrice.toLocaleString()}*
-                    </span>
-                    <span className="text-sm text-[#73796F]">
-                      / person (50% advance deposit to confirm)
-                    </span>
-                  </div>
-
-                  <ul className="space-y-2.5 text-xs sm:text-sm text-[#303D32] mb-8">
-                    <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#42634B]" /> AC Bus & Mountain Taxi (Delhi / Chandigarh)
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#42634B]" /> 2 Nights Boutique Wooden Homestay (Double Sharing)
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#42634B]" /> All Specified Breakfasts, Lunch & Dinners
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#42634B]" /> Barshangarh & Rupi Raila Waterfall Treks
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#42634B]" /> Wood Plank Painting Session + Art Materials
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-[#42634B]" /> Nightly Bonfires with Music & Stargazing
-                    </li>
-                  </ul>
-                </div>
-
-                <Button
-                  to="/book"
-                  variant="primary"
-                  size="lg"
-                  className="w-full text-center shadow-md font-semibold"
-                  icon={Sparkles}
+          <div className="mt-14 max-w-5xl mx-auto text-left">
+            {/* Pricing Packages Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+              {TRIP_CONFIG.packages.map((pkg, idx) => (
+                <div
+                  key={pkg.id}
+                  className={`rounded-3xl border p-6 flex flex-col justify-between shadow-sm ${
+                    idx === 0
+                      ? 'bg-[#42634B] text-white border-[#42634B]'
+                      : 'bg-white text-[#303D32] border-[#E7E5DA]'
+                  }`}
                 >
-                  Book Your Spot (₹9,499*)
-                </Button>
-              </div>
+                  <div>
+                    <span className={`text-[11px] uppercase tracking-widest font-semibold block mb-2 ${
+                      idx === 0 ? 'text-[#C9E4B4]' : 'text-[#42634B]'
+                    }`}>{pkg.sharing}</span>
+                    <span className={`font-serif text-3xl font-bold block mb-1 ${
+                      idx === 0 ? 'text-white' : 'text-[#42634B]'
+                    }`}>
+                      ₹{pkg.price.toLocaleString()}
+                    </span>
+                    <span className={`text-xs block mb-4 ${
+                      idx === 0 ? 'text-[#C9E4B4]' : 'text-[#73796F]'
+                    }`}>per person</span>
+                    <p className={`text-xs leading-relaxed ${
+                      idx === 0 ? 'text-[#C9E4B4]' : 'text-[#73796F]'
+                    }`}>{pkg.label}</p>
+                  </div>
+                  {idx === 0 && (
+                    <span className="mt-4 text-xs font-bold uppercase tracking-wider bg-white/20 text-white px-3 py-1 rounded-full w-fit">
+                      Best Value
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
 
-              {/* Batches calendar (Right) */}
-              <div className="lg:col-span-5 bg-[#FFFCF6] p-6 sm:p-10 border-t lg:border-t-0 lg:border-l border-[#E7E5DA] flex flex-col justify-between">
-                <div>
-                  <h4 className="font-serif text-lg font-semibold text-[#303D32] mb-4 flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-[#C59A56]" />
-                    Upcoming Retreat Batches
-                  </h4>
+            {/* Batch calendar */}
+            <div className="bg-white rounded-3xl border border-[#E7E5DA] shadow-xl shadow-[#42634B]/5 overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-12">
 
-                  <div className="space-y-3">
-                    {TRIP_CONFIG.batches.map((b) => (
-                      <div
-                        key={b.id}
-                        className="bg-white p-3.5 rounded-xl border border-[#E7E5DA] hover:border-[#42634B] transition-all shadow-2xs"
-                      >
-                        <div className="flex items-center justify-between text-xs font-semibold text-[#303D32]">
-                          <span>{b.dates}</span>
-                          <span className="text-[#C59A56] font-mono text-[11px] font-bold">{b.status}</span>
+                {/* Pricing breakdown (Left) */}
+                <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#F3F5EC] text-[#42634B] border border-[#E7E5DA]">
+                        All-Inclusive Package
+                      </span>
+                      <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#FFF8E7] text-[#9E7428] border border-[#EAD79D]">
+                        Thursday – Sunday Batch
+                      </span>
+                    </div>
+
+                    <h3 className="font-serif text-3xl font-semibold text-[#303D32] mb-2">
+                      Shangarh Circle Retreat
+                    </h3>
+                    <p className="text-sm text-[#73796F] mb-6">
+                      3N / 4D in Shangarh • Ex-Delhi / Chandigarh AC Bus & Mountain Taxi
+                    </p>
+
+                    <div className="flex items-baseline gap-2 mb-6">
+                      <span className="font-serif text-4xl sm:text-5xl font-bold text-[#42634B]">
+                        ₹{TRIP_CONFIG.basePrice.toLocaleString()}*
+                      </span>
+                      <span className="text-sm text-[#73796F]">
+                        / person starting price (50% advance deposit to confirm)
+                      </span>
+                    </div>
+
+                    <ul className="space-y-2.5 text-xs sm:text-sm text-[#303D32] mb-8">
+                      <li className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-[#42634B]" /> AC Bus & Mountain Taxi (Delhi / Chandigarh)
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-[#42634B]" /> 3 Nights Boutique Wooden Homestay in Shangarh
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-[#42634B]" /> All Specified Breakfasts, Lunch & Dinners
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-[#42634B]" /> Barshangarh & Rupi Raila Waterfall Treks
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-[#42634B]" /> Wood Plank Painting Session + Art Materials
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-[#42634B]" /> Nightly Bonfires with Music & Stargazing
+                      </li>
+                    </ul>
+                  </div>
+
+                  <Button
+                    to="/book"
+                    variant="primary"
+                    size="lg"
+                    className="w-full text-center shadow-md font-semibold"
+                    icon={Sparkles}
+                  >
+                    Book Your Spot (₹6,999*)
+                  </Button>
+                </div>
+
+                {/* Batches calendar (Right) */}
+                <div className="lg:col-span-5 bg-[#FFFCF6] p-6 sm:p-10 border-t lg:border-t-0 lg:border-l border-[#E7E5DA] flex flex-col justify-between">
+                  <div>
+                    <h4 className="font-serif text-lg font-semibold text-[#303D32] mb-4 flex items-center gap-2">
+                      <Calendar className="w-4 h-4 text-[#C59A56]" />
+                      Retreat Batch Schedule
+                    </h4>
+
+                    <div className="space-y-3">
+                      {TRIP_CONFIG.batches.map((b) => (
+                        <div
+                          key={b.id}
+                          className="bg-white p-3.5 rounded-xl border border-[#E7E5DA] hover:border-[#42634B] transition-all shadow-2xs"
+                        >
+                          <div className="flex items-center justify-between text-xs font-semibold text-[#303D32]">
+                            <span>{b.dates}</span>
+                            <span className="text-[#C59A56] font-mono text-[11px] font-bold">{b.status}</span>
+                          </div>
+                          <div className="flex items-center justify-between text-[11px] text-[#73796F] mt-1">
+                            <span>{b.seatsLeft} spots remaining</span>
+                            <Link to="/book" className="text-[#42634B] hover:text-[#C59A56] font-semibold transition-colors">
+                              Select Batch →
+                            </Link>
+                          </div>
                         </div>
-                        <div className="flex items-center justify-between text-[11px] text-[#73796F] mt-1">
-                          <span>{b.seatsLeft} spots remaining</span>
-                          <Link to="/book" className="text-[#42634B] hover:text-[#C59A56] font-semibold transition-colors">
-                            Select Batch →
-                          </Link>
-                        </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="mt-6 pt-4 border-t border-[#E7E5DA] text-[11px] text-[#73796F]">
+                    * 5% GST applicable additionally. Contact us to confirm exact available batch dates.
                   </div>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-[#E7E5DA] text-[11px] text-[#73796F]">
-                  * 5% GST applicable additionally. Centralized booking dates update dynamically in real time.
-                </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -774,7 +813,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button to="/book" variant="primary" size="lg" icon={Sparkles}>
-              Reserve Your Spot (₹9,499*)
+              Reserve Your Spot (₹6,999*)
             </Button>
             <a
               href={whatsappBannerUrl}

@@ -249,12 +249,12 @@ export default function About() {
             Come Sit in the Circle
           </h2>
           <p className="text-sm sm:text-base text-[#73796F] mb-8 font-normal leading-relaxed">
-            We keep each batch intimate (10 to 14 women) so that real connections can flourish. We would love to welcome you.
+            We keep each batch thoughtfully intimate so that real connections can flourish. We would love to welcome you.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button to="/book" variant="primary" size="lg" icon={Sparkles}>
-              Join Upcoming Batch (₹9,499*)
+              Join Upcoming Batch (₹6,999*)
             </Button>
             <a
               href={whatsappUrl}

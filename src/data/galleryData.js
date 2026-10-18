@@ -239,9 +239,9 @@ export const GALLERY_DATA = [
   {
     id: "page-11",
     src: "/images/page-11.jpg",
-    title: "Brochure: Costing & Booking (₹9,499)",
+    title: "Brochure: Costing & Booking (Starting ₹6,999)",
     category: "Official Brochure",
-    description: "INR 9,499 per person Double Sharing, 50% advance deposit to reserve seat."
+    description: "Packages starting from ₹6,999 per person, 50% advance deposit to reserve seat."
   },
   {
     id: "page-12",

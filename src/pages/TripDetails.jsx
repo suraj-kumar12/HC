@@ -39,7 +39,7 @@ export default function TripDetails() {
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
       <SEO
         title="Shangarh Girls Trip Itinerary & Package | Healing Circle Retreats"
-        description="Explore the complete 3D/2N Shangarh girls trip itinerary, traditional wooden homestay stay, inclusions, waterfall hikes, yoga sessions, and brochure dossier."
+        description="Explore the complete 3 Nights / 4 Days Shangarh girls trip itinerary, traditional wooden homestay stay, inclusions, waterfall hikes, yoga sessions, and brochure dossier."
         canonical="/trip-details"
         image="/images/real-waterfall-traveler.jpg"
       />
@@ -75,7 +75,7 @@ export default function TripDetails() {
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 bg-white/95 backdrop-blur-md px-6 py-3.5 rounded-2xl border border-[#E7E5DA] shadow-md max-w-3xl mx-auto text-xs sm:text-sm text-[#303D32]">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-[#C59A56]" />
-              <span className="font-medium">3 Days / 2 Nights + Overnight Bus</span>
+              <span className="font-medium">3 Nights / 4 Days + Overnight Bus</span>
             </div>
             <span className="text-[#E7E5DA] font-bold">•</span>
             <div className="flex items-center gap-2">
@@ -89,8 +89,8 @@ export default function TripDetails() {
             </div>
             <span className="text-[#E7E5DA] font-bold">•</span>
             <div className="flex items-center gap-1.5">
-              <span className="font-serif font-bold text-[#42634B] text-base">₹{TRIP_CONFIG.basePrice.toLocaleString()}*</span>
-              <span className="text-[10px] text-[#73796F]">Double Sharing</span>
+              <span className="font-serif font-bold text-[#42634B] text-base">Starting ₹{TRIP_CONFIG.basePrice.toLocaleString()}*</span>
+              <span className="text-[10px] text-[#73796F]">per person</span>
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function TripDetails() {
             <SectionHeading
               tag="Authentic Mountain Living"
               title="Where You Will Rest, Nourish & Breathe"
-              subtitle="Explore the 8 real photos of our traditional Kathkuni wooden cottage."
+              subtitle="Explore the real photos of our traditional Himalayan wooden cottage."
               align="center"
             />
 
@@ -302,7 +302,7 @@ export default function TripDetails() {
             <SectionHeading
               tag="Full Disclosure"
               title="Package Inclusions & Exclusions"
-              subtitle="Everything aligned with the official brochure pricing of INR 9,499 per person."
+              subtitle="Everything aligned with the official package pricing, starting from ₹6,999 per person."
               align="center"
             />
 
@@ -500,7 +500,7 @@ export default function TripDetails() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button to="/book" variant="primary" size="lg" icon={Sparkles}>
-              Reserve Your Spot (₹9,499*)
+              Reserve Your Spot (₹6,999*)
             </Button>
             <a
               href={whatsappDossierUrl}

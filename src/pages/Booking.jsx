@@ -15,7 +15,7 @@ export default function Booking() {
     <div className="flex flex-col min-h-screen bg-[#FFFCF6] text-[#303D32]">
       <SEO
         title="Reserve Your Spot | Shangarh Girls Trip Retreat – Healing Circle"
-        description="Book your spot for the upcoming Healing Circle Shangarh Girls Trip. Transparent ₹9,499 double-sharing package, live cost calculator, and verified reservation."
+        description="Book your spot for the upcoming Healing Circle Shangarh Girls Trip. Starting from ₹6,999 per person — Thursday to Sunday batch, live cost calculator, and verified reservation."
         canonical="/book"
         image="/images/real-bonfire-gathering.jpg"
       />
@@ -57,7 +57,7 @@ export default function Booking() {
         <div className="bg-[#F3F5EC] border border-[#E7E5DA] rounded-2xl p-4 sm:p-5 mb-12 text-xs sm:text-sm text-[#4E564F] flex items-start gap-3 shadow-2xs">
           <AlertCircle className="w-5 h-5 text-[#C59A56] shrink-0 mt-0.5" />
           <div className="leading-relaxed">
-            <strong className="text-[#303D32]">Demonstration Prototype Notice:</strong> The price of <strong>₹9,499 per person</strong> is configured according to the official brochure. This booking interface calculates estimated costs and validates traveler details in React component state.
+            <strong className="text-[#303D32]">Demonstration Prototype Notice:</strong> Packages start from <strong>₹6,999 per person</strong> (Thursday – Sunday batch, 3 Nights / 4 Days). This booking interface calculates estimated costs and validates traveler details in React component state.
           </div>
         </div>
 
@@ -76,7 +76,7 @@ export default function Booking() {
                 {TRIP_CONFIG.title}
               </h2>
               <p className="text-xs sm:text-sm text-[#73796F] leading-relaxed mb-6">
-                4 Days / 3 Nights • Sainj Valley, Kullu, Himachal Pradesh
+                3 Nights / 4 Days • Thursday – Sunday Batch • Sainj Valley, Kullu, Himachal Pradesh
               </p>
 
               <div className="space-y-3.5 pb-6 border-b border-[#E7E5DA] text-xs sm:text-sm">
@@ -87,8 +87,8 @@ export default function Booking() {
                   </span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#73796F]">Group Size</span>
-                  <span className="font-medium text-[#303D32]">{TRIP_CONFIG.groupSize}</span>
+                  <span className="text-[#73796F]">Batch</span>
+                  <span className="font-medium text-[#303D32]">Thursday – Sunday</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-[#73796F]">Retreat Host</span>
@@ -104,7 +104,7 @@ export default function Booking() {
                 <ul className="space-y-2.5 text-xs text-[#73796F]">
                   <li className="flex items-center gap-2.5">
                     <Check className="w-3.5 h-3.5 text-[#42634B]" />
-                    <span className="text-[#303D32]">3 Nights Boutique Kathkuni Wooden Homestay</span>
+                    <span className="text-[#303D32]">3 Nights Wooden Homestay in Shangarh</span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <Check className="w-3.5 h-3.5 text-[#42634B]" />
