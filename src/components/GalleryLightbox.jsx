@@ -73,12 +73,13 @@ export default function GalleryLightbox({
       </div>
 
       {/* Main Image Container */}
-      <div className="relative z-10 max-w-5xl max-h-[85vh] p-4 flex flex-col items-center justify-center">
-        <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-black/40 flex items-center justify-center">
+      <div className="relative z-10 w-full max-w-5xl px-4 py-2 flex flex-col items-center justify-center" style={{maxHeight: '85vh'}}>
+        <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-black/40 flex items-center justify-center w-full">
           <img
             src={currentImage.src}
             alt={currentImage.title || 'Shangarh Gallery Image'}
-            className="max-h-[72vh] max-w-full object-contain rounded-xl select-none"
+            className="max-h-[72vh] max-w-full w-auto object-contain rounded-xl select-none"
+            style={{maxWidth: 'min(100%, 900px)'}}
           />
         </div>
 

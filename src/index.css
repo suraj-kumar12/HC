@@ -71,3 +71,11 @@ body {
   background: #8FA58A;
 }
 
+/* Utility: hide scrollbar while maintaining scroll (used in TripDetails sticky tab nav) */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

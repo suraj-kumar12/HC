@@ -145,13 +145,13 @@ export default function TripDetails() {
                   className="bg-white rounded-3xl border border-[#E7E5DA] overflow-hidden shadow-md grid grid-cols-1 lg:grid-cols-12"
                 >
                   {/* Photo column */}
-                  <div className="lg:col-span-5 relative min-h-72 lg:min-h-full bg-[#F3F5EC]">
+                  <div className="lg:col-span-5 relative min-h-72 lg:min-h-0 bg-[#F3F5EC]" style={{minHeight: '18rem'}}>
                     <img
                       src={day.image}
                       alt={day.title}
                       loading="lazy"
                       decoding="async"
-                      className="w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-cover object-center"
                     />
                     <div className="absolute top-4 left-4 bg-[#42634B] text-white px-3.5 py-1 rounded-full text-xs font-semibold shadow-xs">
                       {day.day} • {day.date}
@@ -420,13 +420,14 @@ export default function TripDetails() {
                 <div
                   key={sheet.page}
                   onClick={() => openBrochureLightbox(idx)}
-                  className="group relative rounded-2xl overflow-hidden border border-[#E7E5DA] shadow-xs hover:shadow-lg transition-all aspect-9/16 bg-[#F3F5EC] cursor-pointer"
+                  className="group relative rounded-2xl overflow-hidden border border-[#E7E5DA] shadow-xs hover:shadow-lg transition-all aspect-9/16 bg-white cursor-pointer"
                 >
+                  {/* object-contain: shows full brochure page without cropping any document content */}
                   <img
                     src={sheet.src}
                     alt={sheet.title}
                     loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain"
                   />
                   <div className="absolute top-2 left-2 bg-white/90 text-[#303D32] text-[10px] px-2 py-0.5 rounded-md font-mono font-bold shadow-xs">
                     Page {sheet.page}

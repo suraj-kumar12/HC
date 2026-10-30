@@ -202,7 +202,7 @@ export default function About() {
                     alt="Retreat Guide by the Barshangarh Waterfall"
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full"
                   />
                 </div>
                 <div className="absolute -bottom-3 -right-3 bg-[#42634B] text-white px-3 py-1 rounded-full text-xs font-semibold shadow-xs">

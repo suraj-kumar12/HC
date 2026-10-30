@@ -159,14 +159,14 @@ export default function BrochureSlider({ pages = [] }) {
                     e.preventDefault();
                   }
                 }}
-                className="group relative block rounded-2xl overflow-hidden border border-[#E7E5DA] shadow-xs hover:shadow-lg transition-all duration-300 aspect-9/16 bg-[#F3F5EC]"
+                className="group relative block rounded-2xl overflow-hidden border border-[#E7E5DA] shadow-xs hover:shadow-lg transition-all duration-300 aspect-9/16 bg-white"
               >
-                {/* Brochure Slide Image */}
+                {/* Brochure Slide Image – object-contain ensures the full document page is always visible */}
                 <img
                   src={sheet.src}
                   alt={sheet.title}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 pointer-events-none"
+                  className="w-full h-full object-contain pointer-events-none"
                 />
 
                 {/* Top Corner Page Number Badge */}

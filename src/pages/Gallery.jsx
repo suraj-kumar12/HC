@@ -111,15 +111,17 @@ export default function Gallery() {
               <div
                 key={img.id}
                 onClick={() => openLightbox(idx)}
-                className={`group relative rounded-3xl overflow-hidden bg-white border border-[#E7E5DA] shadow-xs hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col ${
-                  isBrochure ? 'aspect-9/16 sm:aspect-3/4' : 'aspect-4/3'
+                className={`group relative rounded-3xl overflow-hidden border border-[#E7E5DA] shadow-xs hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col ${
+                  isBrochure ? 'aspect-9/16 sm:aspect-3/4 bg-white' : 'aspect-4/3 bg-[#F3F5EC]'
                 }`}
               >
                 <img
                   src={img.src}
                   alt={img.title}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
+                    isBrochure ? 'object-contain' : 'object-cover'
+                  }`}
                 />
 
                 {/* Category badge on top */}

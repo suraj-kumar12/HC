@@ -54,7 +54,7 @@ export default function Home() {
             alt="Sacred Shangchul Mahadev Temple in the lush Shangarh Meadow"
             fetchPriority="high"
             decoding="async"
-            className="w-full h-full object-cover object-center scale-102 transition-transform duration-1000 ease-out"
+            className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"
           />
           {/* Luminous, daylight-enhancing gradient overlays */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#FFFCF6]/88 via-[#FFFCF6]/72 to-[#FFFCF6]" />
@@ -350,11 +350,11 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-12">
               
               {/* Day Image */}
-              <div className="lg:col-span-5 relative min-h-64 lg:min-h-full bg-[#F3F5EC]">
+              <div className="lg:col-span-5 relative min-h-64 lg:min-h-0 bg-[#F3F5EC]" style={{minHeight: '16rem'}}>
                 <img
                   src={TRIP_CONFIG.itinerary[selectedDay].image}
                   alt={TRIP_CONFIG.itinerary[selectedDay].title}
-                  className="w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
                 />
                 <div className="absolute top-4 left-4 bg-[#42634B] text-white px-3.5 py-1 rounded-full text-xs font-semibold shadow-xs">
                   {TRIP_CONFIG.itinerary[selectedDay].day} ({TRIP_CONFIG.itinerary[selectedDay].date})
